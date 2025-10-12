@@ -1,0 +1,68 @@
+name: Publish to GitHub Pages
+on:
+  push:
+    branches: [future]
+  workflow_dispatch:
+
+# Controls the permissions for the GitHub token
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    name: Build static site and deploy it to GitHub Pages
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+
+    steps:
+      - name: Checkout Git repository
+        uses: actions/checkout@v5
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Installation of Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.151.0'
+
+      # Ruby is required for AsciiDoctor and simimlar tools
+      - name: Installation of Ruby and Bundler
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4' # Not needed with a .ruby-version, .tool-versions or mise.toml
+
+      - name: Setup Node.js for Mermaid
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+
+      - name: Install Ruby based dependencies
+        run: bundler install --system
+
+      - name: Install deps (dev incl. Mermaid CLI)
+        run: npm ci
+
+      - name: Configure PATH for local tools
+        run: echo "$(pwd)/node_modules/.bin" >> $GITHUB_PATH
+
+      - name: Show Asciidoctor's version
+        run: asciidoctor --version
+
+      - name: Show Hugo's version
+        run: hugo version
+
+      - name: Show Mermaid's version
+        run: mmdc --version
+
+      - name: Build the static site with Hugo
+        run: hugo --minify
+
+      - name: Deploy the generated static site
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/future'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./generated-site

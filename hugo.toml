@@ -1,0 +1,56 @@
+baseURL = 'https://stdout.oliverfischer.dev'
+theme = 'hugo-coder'
+title = 'stdout'
+publishDir = "generated-site"
+staticDir = "static-content"
+
+[menu]
+    [[menu.main]]
+        name = "Home"
+        pageRef = "/"
+        weight = 10
+
+        [[menu.main]]
+        name = "Posts"
+        pageRef = "/posts"
+        weight = 20
+
+        [[menu.main]]
+        name = "LinkedIn"
+        url = "https://www.linkedin.com/in/oliverfischer/"
+        weight = 30
+
+        [[menu.main]]
+        name = "Linktree"
+        url = "https://linktr.ee/oliver.fischer"
+        weight = 35
+
+[markup]
+    [markup.asciidocExt]
+        noHeaderOrFooter = true
+        preserveTOC = false
+        backend = 'html5'
+
+        extensions = ['asciidoctor-diagram']
+        workingFolderCurrent = true
+
+    [markup.asciidocExt.attributes]
+        showtitle = true
+        source-highlighter = 'rouge'
+        rouge-style = 'molokai'
+
+[params]
+    author = "Oliver B. Fischer"
+    description = "Oliver Fischers Blog zu Dingen rund um IT und Sofwareentwicklung"
+    gravatar = "hallo@oliverfischer.dev"
+    hideColorSchemeToggle = true
+    since = 2025
+
+[frontmatter]
+    title = [":title", ":doctitle"]
+    lastmod = [":modified", ":lastmod"]
+    publishDate = [":publishDate", ":date"]
+
+[security]
+    [security.exec]
+        allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$', '^asciidoctor$']
