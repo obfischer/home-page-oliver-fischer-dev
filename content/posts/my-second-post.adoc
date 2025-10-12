@@ -1,0 +1,67 @@
++++
+date = "2017-02-14T00:00:00+01:00"
+draft = true
+title = "My Second Post"
+tags = ["JUnit", "Testing"]
+booktitle = "The Little Test That Could: A Tale of Finding Hidden Bugs"
+
+description = "Ever wondered if your 80% test coverage actually means anything? Discover how mutation testing introduces deliberate bugs to measure your tests' true effectiveness, turning your test suite from a paper tiger into a real watchdog! PITest makes this powerful technique accessible to Java developers with just a few lines of configuration."
+
+abstract = "This article explores how mutation testing can significantly improve test quality by going beyond traditional code coverage metrics. It introduces PITest, a powerful Java mutation testing framework that helps developers identify weaknesses in their test suites by introducing controlled defects into the code. The article demonstrates practical examples of how mutation testing can reveal inadequate test cases despite high code coverage, and discusses strategies for integrating mutation testing into code review systems and continuous integration pipelines, while acknowledging its limitations in complex testing scenarios."
++++
+
+= My Second Post
+
+In this guide, you will learn how to write HelloWorld program in Java.
+
+== Prerequisites
+* Java 17+
+* Your favorite IDE (Intellij IDEA, Eclipse, NetBeans, VS Code)
+
+
+slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.
+slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.
+slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.
+slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.
+slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.
+slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.
+slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.
+slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.
+slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.slöfjksf d sladkjf ödlsfkj asdfjlö sdfdas.
+
+
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+//[mermaid, background="FF0000"]
+//[mermaid, background="FF0000"]
+[mermaid, background="transparent"]
+....
+include::example.mmd[]
+....
+
+
+sdfasdfasdf
+
+
+d
+.Das ist eine Klasse
+[source,java]
+----
+public class Snuffi {
+    public void doIt() {
+    }
+}
+----
+[source,java]
+----
+include::KlasseKlasse.java[]
+----
+
+
+== lskjfölaksfjlakjsföklsdfj
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+=== lajfölajksdfölkdsjfölskd
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
