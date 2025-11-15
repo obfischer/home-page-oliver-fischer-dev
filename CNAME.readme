@@ -1,0 +1,5 @@
+Because of the way the currently used action `peaceiris/actions-gh-pages`
+works, the CNAME file with the subdomain must be part of the generated
+site. As the static content of the site will be copied to the root
+directory of the generated content, this hack ensures that the CNAME
+will be present on the `gh-pages` branch.
