@@ -1,0 +1,1 @@
+The content of this directory will be copied by Hugo directly to the directory with the generated content.
