@@ -16,6 +16,11 @@ staticDir = "static-content"
         weight = 20
 
         [[menu.main]]
+        name = "Impressum"
+        pageRef = "/impressum/"
+        weight = 20
+
+        [[menu.main]]
         name = "LinkedIn"
         url = "https://www.linkedin.com/in/oliverfischer/"
         weight = 30
@@ -45,6 +50,7 @@ staticDir = "static-content"
     gravatar = "hallo@oliverfischer.dev"
     hideColorSchemeToggle = true
     since = 2025
+    dateFormat = "2. Februar 2006"
 
 [frontmatter]
     title = [":title", ":doctitle"]
