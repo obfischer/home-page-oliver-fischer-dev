@@ -1,0 +1,24 @@
+{{/*
+    Anpassung an dem gleichnamingen Template aus dem Theme Coder
+
+    Standardmäßig wird immer der Titel aus dem Frontmappter und
+    der Titel aus dem Inhalt des Dokuments in das HTML-Dokument
+    gerendert.
+
+    Um nur ein H1-Element zu haben und weil es irgendwie doppeltgemoppelt
+    ist, wird jetzt nur der Titel aus dem Frontmatter genommen,
+    um eine H1-Überschrift zu rendern.
+
+*/}}
+
+{{ if eq .Level 1 }}
+    {{/* Absichtlich leer */}}
+{{ else }}
+    <h{{ .Level }} id="{{ .Anchor | safeURL }}">
+        {{ .Text | safeHTML }}
+            <a class="heading-link" href="#{{ .Anchor | safeURL }}">
+                <i class="fa-solid fa-link" aria-hidden="true" title="{{ i18n "link_to_heading" | default "Link to heading" }}"></i>
+                <span class="sr-only">{{ i18n "link_to_heading" | default "Link to heading" }}</span>
+            </a>
+    </h{{ .Level }}>
+{{ end }}
