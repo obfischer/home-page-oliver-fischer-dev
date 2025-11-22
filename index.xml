@@ -1,1 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>stdout</title><link>https://stdout.oliverfischer.dev/</link><description>Recent content on stdout</description><generator>Hugo</generator><language>en</language><lastBuildDate/><atom:link href="https://stdout.oliverfischer.dev/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>stdout</title><link>https://stdout.oliverfischer.dev/</link><description>Recent content on stdout</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://stdout.oliverfischer.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Impressum</title><link>https://stdout.oliverfischer.dev/impressum/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://stdout.oliverfischer.dev/impressum/</guid><description>&lt;p&gt;Oliver Fischer &lt;br&gt;
+Schönhauser Allee 64 &lt;br&gt;
+10437 Berlin&lt;/p&gt;
+
+
+
+ &lt;h2 id="kontakt"&gt;
+ Kontakt
+ &lt;a class="heading-link" href="#kontakt"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+ &lt;/h2&gt;
+
+&lt;p&gt;Telefon: +49 (178) 7903538 &lt;br&gt;
+E-Mail: &lt;a href="mailto:hello@oliverfischer.dev" &gt;hello@oliverfischer.dev&lt;/a&gt;&lt;/p&gt;
+
+
+
+ &lt;h2 id="umsatzsteuer-id"&gt;
+ Umsatzsteuer-ID
+ &lt;a class="heading-link" href="#umsatzsteuer-id"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+ &lt;/h2&gt;
+
+&lt;p&gt;Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
+DE32 511 22 22&lt;/p&gt;
+
+
+
+ &lt;h2 id="angaben-zur-berufshaftpflichtversicherung"&gt;
+ Angaben zur Berufshaftpflichtversicherung
+ &lt;a class="heading-link" href="#angaben-zur-berufshaftpflichtversicherung"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+ &lt;/h2&gt;
+
+&lt;p&gt;Name und Sitz des Versicherers: &lt;br&gt;
+exali AG &lt;br&gt;
+Franz-Kobinger-Str. 9 &lt;br&gt;
+86157 Augsburg&lt;/p&gt;
+&lt;p&gt;Geltungsraum der Versicherung: Deutschland&lt;/p&gt;
+
+
+
+ &lt;h2 id="redaktionell-verantwortlich"&gt;
+ Redaktionell verantwortlich
+ &lt;a class="heading-link" href="#redaktionell-verantwortlich"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+ &lt;/h2&gt;
+
+&lt;p&gt;Oliver Fischer
+Schönhauser Allee 64
+10437 Berlin&lt;/p&gt;</description></item></channel></rss>
