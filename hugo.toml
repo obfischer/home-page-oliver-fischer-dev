@@ -40,7 +40,7 @@ staticDir = "static-content"
         workingFolderCurrent = true
 
     [markup.asciidocExt.attributes]
-        showtitle = true
+        "showtitle!" = "" # Deaktiviert die Anzeige der obersten Überschrift
         source-highlighter = 'rouge'
         rouge-style = 'molokai'
 
