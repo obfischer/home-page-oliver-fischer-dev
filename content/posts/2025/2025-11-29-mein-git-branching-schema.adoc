@@ -5,9 +5,15 @@ description = "d"
 keywords = ["git", "branching", "source code control", "workflow"]
 +++
 
-= Git-Branching-Schema
+= Ein universelles Schema für Git-Branching
 
-Ein effektives Branching-Schema ist ein wichtiger Baustein für eine erfolgreiche Git-Nutzung in jedem Projekt und geht über die Benennung des Haupt-Branches und der für Features und Bugfixes hinaus.
+Ein effektives Branching-Schema ist ein wichtiger Baustein für eine erfolgreiche Git-Nutzung in jedem Projekt und geht über die Benennung des Haupt-Branches und der für Features und Bugfixes hinaus. Warum nur `main` und das Triptychon aus `feature/*`, `improvement/*` und `bugfix/*` nicht ausreicht und wie es vielleicht besser geht, zeige ich hier. Los geht`s!
 
-<!--more-->
-ddfdf
+== Die Motivation
+
+== Warum das klassische Schema nicht ausreicht
+
+
+== Ein Archiv und Raum für Privates
+
+== Fazit und Ausblick
