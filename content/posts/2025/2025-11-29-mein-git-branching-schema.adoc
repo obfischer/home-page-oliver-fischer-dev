@@ -1,5 +1,5 @@
 +++ 
-draft = false
+draft = true
 title = "Ein universelles Schema für Git-Branching"
 description = "d"
 keywords = ["git", "branching", "source code control", "workflow"]
@@ -11,9 +11,45 @@ Ein effektives Branching-Schema ist ein wichtiger Baustein für eine erfolgreich
 
 == Die Motivation
 
-== Warum das klassische Schema nicht ausreicht
+Im Jahre 2010 hat Vincent Driessen in seinem Blog im Artikel _https://nvie.com/posts/a-successful-git-branching-model[A successful Git branching model]_ das Git-Flow-Model beschrieben.
+Das Git-Flow-Model stellt Organisationen einen einheitlichen Vorschlag für die Arbeit an einen Software-Projekt bereit, um Software-Projekte mit unterschiedlichen Release-Versionen über deren gesamten Lifecyle entwickeln zu können.
+Der Titel seines Blog-Artikels stellt eine selbsterfüllende Prophezeiung dar, denn das für ihn erfolgreiche Branching-Modell wurde so populär, dass auch darüber hinaus seinen Siegeszug angetreten hat.
+
+Vorab sollte an dieser Stelle gesagt sein, dass das Git-Flow-Model effizient und effektiv ist und in seiner Form ausgezeichnet für viele Projekte funktioniert.
+
+Mit Git-Flow führt er auch die folgenden Präfixe für Branch-Namen ein:
+
+* `feature` für Branches auf denen neue Funktionen entwickelt werden
+* `release` für Releases
+* `hotfix` für dringende Fehlerbehebungen
+
+Der auch oft gesehen Branch-Namenpräfix `improvement` existiert bei Vincent Driessen 2010 noch nicht, taucht aber in den folgenden Jahren in der Git-Community auf.
+
+Übergreifend haben sich in den folgenden Jahren die folgenden drei Präfixe für Git-Branch-Namen etabliert:
+
+* `feature` für neue Funktionen
+* `improvement` für kleine Änderungen, die keine neuen Funktionen an sich bereitstellen
+* `bugfix` für reine Fehlerbehebungen
+
+`feature`, `improvement` und `bugfix` sind Namensräume, in die wir unsere Arbeit einsortieren können, um anderen es leichter zu machen sie zu erkennen.
+
+In meiner Praxis konnte ich aber auch immer folgende drei Phänomene beobachten, die alle zu einer schlechteren Übersichtlichkeit und damit zu mehr Mental Load geführt haben:
+
+1. alte und verwaiste Branches ohne Aktivität
+2. private Branches, auf denen Teammitglieder experimentiert haben
+3. Archivbranches, welche aus unterschiedlichen Gründen aufgehoben hat
+
+Die Abgrenzung zwischen diesen dreien sind fließend, gemein ist ihnen jedoch, dass sie die für uns notwendigen Namensräume verschmutzen.
+
+
+== Erweiterung des Git-Flow-Schema-Branching-Schema
+
 
 
 == Ein Archiv und Raum für Privates
 
 == Fazit und Ausblick
+
+== Quellen und Verweise
+
+* https://nvie.com/posts/a-successful-git-branching-model/[A successful Git branching model, Vincent Driessen, 2010]
