@@ -1,4 +1,6 @@
 baseURL = 'https://stdout.oliverfischer.dev'
+defaultContentLanguage = "de"
+languageCode = "de-DE"
 theme = 'hugo-coder'
 title = 'stdout'
 publishDir = "generated-site"
@@ -46,11 +48,11 @@ staticDir = "static-content"
 
 [params]
     author = "Oliver B. Fischer"
+    dateFormat = "2. January 2006"
     description = "Oliver Fischers Blog zu Dingen rund um IT und Sofwareentwicklung"
     gravatar = "hallo@oliverfischer.dev"
     hideColorSchemeToggle = true
     since = 2025
-    dateFormat = "2. Februar 2006"
 
 [frontmatter]
     title = [":title", ":doctitle"]
