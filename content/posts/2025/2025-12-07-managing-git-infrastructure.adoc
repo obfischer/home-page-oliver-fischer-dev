@@ -1,0 +1,14 @@
++++ 
+draft = true
+date = "2025-12-07T12:00:00+01:00"
+title = "Git-Infrastrukturen effektiv verwalten"
+description = "d"
+keywords = ["git", "source code control", "workflow", "infrastructure"]
+categories = ['Git']
++++
+
+//  todo slug = "aaaaaaaaaaaaaaaaaaaaaaa"
+
+= TBD
+
+Da muss noch etwas geschrieben werden

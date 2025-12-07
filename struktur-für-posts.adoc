@@ -1,0 +1,18 @@
+= AsciiDoc Article Title
+
+. Warum
+.. Zweck
+.. Motiv
+.. Bewußtsein schaffen
+
+. Was
+.. Begriffe
+.. Hintergründe
+
+. Wie
+.. Beispiele
+.. Konkrete Anweisungen
+
+. Wohin
+.. Weitere Optionen
+.. Zukunftsaussichten
