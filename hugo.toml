@@ -5,8 +5,6 @@ theme = 'hugo-coder'
 title = 'stdout'
 publishDir = "generated-site"
 staticDir = "static-content"
-languageCode = "de-DE"
-defaultContentLanguage = "de"
 
 [menu]
     [[menu.main]]

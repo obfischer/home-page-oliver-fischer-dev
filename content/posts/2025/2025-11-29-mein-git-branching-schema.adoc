@@ -5,7 +5,7 @@ title = "Ein universelles Schema für Git-Branching"
 description = "d"
 keywords = ["git", "branching", "source code control", "workflow"]
 slug = "aaaaaaaaaaaaaaaaaaaaaaa"
-categories = ['Category A', 'Category B']
+categories = ['Tidy First', 'Git']
 +++
 
 = Weitere Namensräume für Branches in Git-Projekten
