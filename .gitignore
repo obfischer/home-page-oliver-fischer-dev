@@ -8,3 +8,6 @@
 
 # Node.js staff for Mermaid
 /node_modules
+
+# Ruby and Asciidoctor
+/.ruby-version
