@@ -5,6 +5,7 @@
 # Hugo related
 .hugo_build.lock
 /generated-site/
+/resources/_gen
 
 # Node.js staff for Mermaid
 /node_modules
