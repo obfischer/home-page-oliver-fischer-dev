@@ -4,7 +4,7 @@ date = "2026-01-20T15:02:15+01:00"
 title = "Emoji-Unterstützung in Git goes to the Moon"
 description = "Git erlaubt die Verwendung von Emojis als Bezeichner für ein Remote-Repository."
 keywords = ["git"]
-slug = "Emoji-Unterstützung in Git goes to the Moon"
+slug = "Emoji-Unterstuetzung in Git goes to the Moon"
 categories = ['Unicode', 'Fundstücke', 'Git']
 +++
 
