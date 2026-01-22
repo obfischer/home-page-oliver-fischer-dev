@@ -1,3 +1,10 @@
 = Repository for the blog of Oliver B. Fischer
 
-Nothing to read at the moment. 
+== Create a New Post
+
+This repository contains an interactice script `hugo-new.sh`, which helps to create a new blog post based on the default content archetype.
+
+.Create a new blog post
+----
+./bin/hugo-new.sh
+----
