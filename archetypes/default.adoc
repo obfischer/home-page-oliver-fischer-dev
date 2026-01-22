@@ -1,0 +1,99 @@
+---
+# Quelle: https://gohugo.io/content-management/front-matter/
+
+# Titel des Beitrags
+# Erscheint als <title> im HTML und als H1 auf der Seite
+# Beispiel: "Git Workflow optimieren mit Custom Aliases"
+title: {{ getenv "HUGO_CONTENT_TITLE" }}
+
+# Veröffentlichungsdatum im ISO 8601 Format
+# Wird für Sortierung und Sitemap verwendet
+# Beispiel: 2025-01-22T10:30:00+01:00
+date: {{ .Date }}
+
+# Datum der letzten Aktualisierung
+# Signalisiert Suchmaschinen, dass Content gepflegt wird
+# Bei größeren Updates anpassen, nicht bei Tippfehler-Korrekturen
+# Beispiel: 2025-03-15T14:00:00+01:00
+lastmod: {{ .Date }}
+
+# Entwurfsstatus
+# Bei true wird der Beitrag nicht veröffentlicht (außer mit hugo --buildDrafts)
+draft: true
+
+# Meta-Description für Suchmaschinen
+# Erscheint in den Google-Suchergebnissen unter dem Titel
+# Optimal: 150-160 Zeichen, enthält wichtigstes Keyword
+# Beispiel: "Lerne, wie du mit Git Aliases deinen Workflow beschleunigst. Praktische Beispiele für Log-Formatierung und Branch-Management."
+#
+# Bei einer mehrzeiligen Beschreibung kann mit >- gerarbeitet werden
+description: ""
+
+# Kurzfassung für Listen und Übersichten auf der Website
+# Wird oft auf der Startseite oder in Kategorie-Übersichten angezeigt
+# Kann länger sein als description
+# Beispiel: "Git bietet mächtige Möglichkeiten zur Anpassung. In diesem Artikel zeige ich meine liebsten Aliases und wie du sie einrichtest."
+summary: ""
+
+# Autor(en) des Beitrags
+# Kann für Autor-Seiten und strukturierte Daten genutzt werden
+# Beispiel: ["Oliver", "Gastautor"]
+authors: ["Oliver B. Fischer"]
+
+# Tags für Verschlagwortung
+# Feingranulare Themen, werden oft in Tag-Clouds angezeigt
+# Beispiel: ["git", "bash", "produktivität", "cli"]
+tags: []
+
+# Kategorien für grobe Einordnung
+# Übergeordnete Themenbereiche, meist hierarchisch
+# Beispiel: ["Entwicklung", "Tools"]
+categories: []
+
+# Serie für mehrteilige Beiträge
+# Verbindet thematisch zusammenhängende Artikel
+# Stärkt internes Linking und Content-Cluster
+# Beispiel: ["Git Masterclass"]
+series: []
+
+# URL-Slug (letzter Teil der URL)
+# Sollte kurz, lesbar und keyword-reich sein
+# Bindestriche statt Unterstriche verwenden
+# Beispiel: "git-aliases-workflow"
+slug: "{{ .Name }}"
+
+# Vollständige URL (überschreibt Standardpfad)
+# Nur setzen wenn nötig, leer lassen für Standardverhalten
+# Beispiel: "/tutorials/git/aliases/"
+url: ""
+
+# Weiterleitungen von alten URLs
+# Wichtig wenn URLs geändert werden, verhindert 404 und erhält SEO-Wert
+# Beispiel: ["/blog/alte-url/", "/2024/git-tips/"]
+aliases: []
+
+# Keywords für Meta-Tag
+# SEO-Wert heute gering, kann aber für interne Suche nützlich sein
+# Beispiel: ["git alias", "git konfiguration", "git workflow"]
+keywords: []
+
+# Bilder für Social Media Previews (Open Graph, Twitter Cards)
+# Erstes Bild wird als Vorschaubild verwendet
+# Optimale Größe: 1200x630 Pixel
+# Beispiel: ["images/git-workflow-header.png"]
+images: []
+
+# Schema.org Typ für strukturierte Daten (JSON-LD)
+# Hilft Suchmaschinen den Content-Typ zu verstehen
+# Mögliche Werte: "BlogPosting", "Article", "HowTo", "TechArticle"
+# Beispiel: "TechArticle"
+schema:
+  type: "BlogPosting"
+---
+// Achtung! Die gerenderte Überschrift wird aus dem
+// Front-Matter genommen.
+// Grund dafür sind spezifische Anpassungen für das Theme
+// Coder (Stand: 2026-01-22)
+= {{ getenv "HUGO_CONTENT_TITLE" }}
+
+{{ getenv "HUGO_CONTENT_TITLE" }} kann jetzt geschrieben werden.
