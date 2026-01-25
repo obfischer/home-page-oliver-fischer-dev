@@ -1,0 +1,24 @@
+= Taxonomie
+
+Übersicht der für das Blog verwendeten Taxonomien.
+
+== Unterscheidung zwischen Kategorie und Tag
+
+. Eine Kategorie benennt eine Themengebiet.
+Ein Artikel wird durch die seine Kategorien Themengebieten zugeordnet.
+. Tags beschreiben den Inhalt im Detail und erlauben Querbezüge herzustellen.
+
+
+== Categories
+
+* Agentic Coding
+* Fundstücke
+* Gedanken
+* Git
+* Internationalisierung
+* Software Engineering
+* Spring
+
+== Tags
+
+Tags können frei gewählt werden.
