@@ -1,5 +1,11 @@
 {
   "devDependencies": {
     "@mermaid-js/mermaid-cli": "^11.12.0"
+  },
+  "dependencies": {
+    "mathjax": "^3.2.2"
+  },
+  "scripts": {
+    "postinstall": "mkdir -p static-content/js/mathjax/ && cp -r node_modules/mathjax/es5 static-content/js/mathjax/"
   }
 }
