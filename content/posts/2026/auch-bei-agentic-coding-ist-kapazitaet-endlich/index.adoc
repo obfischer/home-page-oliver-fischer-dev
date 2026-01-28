@@ -1,0 +1,116 @@
+---
+# Quelle: https://gohugo.io/content-management/front-matter/
+
+title: Auch bei Agentic Coding ist Kapazität endlich
+
+# Veröffentlichungsdatum im ISO 8601 Format
+# Wird für Sortierung und Sitemap verwendet
+# Beispiel: 2025-01-22T10:30:00+01:00
+date: 2026-01-28T23:55:02+01:00
+
+# Datum der letzten Aktualisierung
+# Signalisiert Suchmaschinen, dass Content gepflegt wird
+# Bei größeren Updates anpassen, nicht bei Tippfehler-Korrekturen
+# Beispiel: 2025-03-15T14:00:00+01:00
+lastmod: 2026-01-28T23:55:02+01:00
+
+# Entwurfsstatus
+# Bei true wird der Beitrag nicht veröffentlicht (außer mit hugo --buildDrafts)
+draft: false
+
+# Meta-Description für Suchmaschinen
+# Erscheint in den Google-Suchergebnissen unter dem Titel
+# Optimal: 150-160 Zeichen, enthält wichtigstes Keyword
+# Beispiel: "Lerne, wie du mit Git Aliases deinen Workflow beschleunigst. Praktische Beispiele für Log-Formatierung und Branch-Management."
+#
+# Bei einer mehrzeiligen Beschreibung kann mit >- gerarbeitet werden
+description: ""
+
+# Kurzfassung für Listen und Übersichten auf der Website
+# Wird oft auf der Startseite oder in Kategorie-Übersichten angezeigt
+# Kann länger sein als description
+# Beispiel: "Git bietet mächtige Möglichkeiten zur Anpassung. In diesem Artikel zeige ich meine liebsten Aliases und wie du sie einrichtest."
+summary: ""
+
+# Autor(en) des Beitrags
+# Kann für Autor-Seiten und strukturierte Daten genutzt werden
+# Beispiel: ["Oliver", "Gastautor"]
+authors: ["Oliver B. Fischer"]
+
+# Tags für Verschlagwortung
+# Feingranulare Themen, werden oft in Tag-Clouds angezeigt
+# Beispiel: ["git", "bash", "produktivität", "cli"]
+#tags: []
+
+# Kategorien für grobe Einordnung
+# Übergeordnete Themenbereiche, meist hierarchisch
+# Beispiel: ["Entwicklung", "Tools"]
+categories: ["Agentic Coding", "Gedanken"]
+
+# Serie für mehrteilige Beiträge
+# Verbindet thematisch zusammenhängende Artikel
+# Stärkt internes Linking und Content-Cluster
+# Beispiel: ["Git Masterclass"]
+#series: []
+
+# URL-Slug (letzter Teil der URL)
+# Sollte kurz, lesbar und keyword-reich sein
+# Bindestriche statt Unterstriche verwenden
+# Beispiel: "git-aliases-workflow"
+slug: "auch-bei-agentic-coding-ist-kapazitaet-endlich"
+
+# Vollständige URL (überschreibt Standardpfad)
+# Nur setzen wenn nötig, leer lassen für Standardverhalten
+# Beispiel: "/tutorials/git/aliases/"
+#url: ""
+
+# Weiterleitungen von alten URLs
+# Wichtig wenn URLs geändert werden, verhindert 404 und erhält SEO-Wert
+# Beispiel: ["/blog/alte-url/", "/2024/git-tips/"]
+#aliases: []
+
+# Keywords für Meta-Tag
+# SEO-Wert heute gering, kann aber für interne Suche nützlich sein
+# Beispiel: ["git alias", "git konfiguration", "git workflow"]
+keywords: ["Agentic Coding"]
+
+# Bilder für Social Media Previews (Open Graph, Twitter Cards)
+# Erstes Bild wird als Vorschaubild verwendet
+# Optimale Größe: 1200x630 Pixel
+# Beispiel: ["images/git-workflow-header.png"]
+#images: []
+
+# Schema.org Typ für strukturierte Daten (JSON-LD)
+# Hilft Suchmaschinen den Content-Typ zu verstehen
+# Mögliche Werte: "BlogPosting", "Article", "HowTo", "TechArticle"
+# Beispiel: "TechArticle"
+#schema:
+#  type: "BlogPosting"
+---
+// Achtung! Die gerenderte Überschrift wird aus dem
+// Front-Matter genommen.
+// Grund dafür sind spezifische Anpassungen für das Theme
+// Coder (Stand: 2026-01-22)
+= Auch bei Agentic Coding ist die Kapazität endlich
+:stem: latexmath
+
+Aktuell höre und lese ich immer, dass mithilfe der künstlichen Intelligenz, den Large Language Modellen für Agentic Coding und Tools wie Claude Code oder Copilot Software Commodity geworden sei.
+Doch die Idee, dass Code mit Agentic Coding zu erzeugen oder zu ändern nichts mehr kostet, ist eine Lüge, wenn auch eine angenehme.
+Und wer behauptet, dass all dies jetzt nichts mehr kostet und wir einfach von Sprache zu Sprache und von Framework zu Framework springen, unterliegt einem Selbstbetrug.
+
+Der Grund dafür ist einfach. Die Zeit stem:[t] ist endlich. Für alles, für dessen Durchführung stem:[t(A) > 0ms] gilt, gilt auch, dass für zwei voneinander abhängige Aufgaben stem:[A] und stem:[B] gilt, dass stem:[t(A) + t(B) > min(t(A), t(B))] gilt.
+
+Und das für jedes stem:[\forall A: t(A) > 0ms] gilt, ergibt sich allein schon durch die Beschränkung jeder Signalgeschwindigkeit durch die Physik.
+
+Und ein weiterer Punkt, der übersehen wird ist, dass Software mehr als Code ist.
+Sie ist codifiziertes Wissen und dieses wird immer zusammen mit der Software gewonnen und oft hart erarbeitet.
+
+Daher: Zeit ist endlich, jede Ressource ist endlich.
+Genauso wie wir sterblich sind.
+Und die Zukunft war nie eine Extrapolation von Entwicklungen.
+
+Was sich ändert, ist der Maßstab.
+Und wenn ihr jemanden findet, der sagt: "Man müsse nicht mehr wegen KI...", dann sagt mir Bescheid.
+Diese Person ist zum einen unsterblich und verfügt über unbegrenzte Ressourcen.
+Ich brauche diesen Kontakt.
+
