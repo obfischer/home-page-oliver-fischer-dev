@@ -1,0 +1,21 @@
+{{/*
+    Anpassung des gleichnamigen Templates aus dem Coder-Theme,
+    um das head-Element jeder Seite zu erweitern.
+*/}}
+
+{{/* Anpassungen um mathematische Ausdrücke aus in Asciidoctor-Dokumenten zu rendern */}}
+
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['\\(', '\\)']],
+            displayMath: [['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        options: {
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+        }
+    };
+</script>
+<script src="{{ "js/mathjax/es5/tex-mml-chtml.js" | relURL }}" id="MathJax-script" async></script>

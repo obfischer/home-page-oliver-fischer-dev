@@ -12,3 +12,6 @@
 
 # Ruby and Asciidoctor
 /.ruby-version
+
+# JavaScript stuff will be installed by npm, e.g. MathJS
+/static-content/js/

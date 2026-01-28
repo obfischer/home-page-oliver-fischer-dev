@@ -45,6 +45,7 @@ staticDir = "static-content"
         "showtitle!" = "" # Deaktiviert die Anzeige der obersten Überschrift
         source-highlighter = 'rouge'
         rouge-style = 'molokai'
+        stem = 'latexmath'
 
 [params]
     author = "Oliver B. Fischer"
