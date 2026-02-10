@@ -54,6 +54,10 @@ staticDir = "static-content"
     gravatar = "hallo@oliverfischer.dev"
     hideColorSchemeToggle = true
     since = 2025
+    info = [
+        "Digital Product Architect",
+        "Ich helfe mittelständischen Unternehmen und Organisationen aus einer Geschäftsidee ein funktionierendes digitales Produkt zu machen – von der Konzeption über die technische Umsetzung bis zum Betrieb."
+        ]
 
 [frontmatter]
     title = [":title", ":doctitle"]

@@ -1,0 +1,15 @@
+{{/*
+    Anpassung des gleichnamigen Templates aus dem Coder-Theme.
+    Unterschied ist, dass, wenn info ein Array ist, die einzelnen
+    Elemente mittels <h2/> anders strukturiert werden und nicht via <br/>,
+    wie in Original-Template.
+*/}}
+
+<h1 style="padding-bottom: 2rem;">{{ .Site.Params.author }}</h1>
+
+{{ if reflect.IsSlice .Site.Params.info }}
+{{ range .Site.Params.info }}<h2 style="padding-bottom: 1rem">{{ . | markdownify }}</h2>{{ end}}
+{{ else }}
+<h2>{{ .Site.Params.info | markdownify }}</h2>
+{{ end }}
+
