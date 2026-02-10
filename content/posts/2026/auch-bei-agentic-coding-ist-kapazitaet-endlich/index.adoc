@@ -30,7 +30,7 @@ description: ""
 # Wird oft auf der Startseite oder in Kategorie-Übersichten angezeigt
 # Kann länger sein als description
 # Beispiel: "Git bietet mächtige Möglichkeiten zur Anpassung. In diesem Artikel zeige ich meine liebsten Aliases und wie du sie einrichtest."
-summary: ""
+summary: "Die Künstliche Intelligenz (KI) hat Agentic Coding nicht zu einer Software-Commodity gemacht. Die Zeit ist endlich, jede Ressource ist begrenzt und wird hart erarbeitet. Es ändert sich lediglich der Maßstab, aber die Zukunft bleibt unveränderbar."
 
 # Autor(en) des Beitrags
 # Kann für Autor-Seiten und strukturierte Daten genutzt werden

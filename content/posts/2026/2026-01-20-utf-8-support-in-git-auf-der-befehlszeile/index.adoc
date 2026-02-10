@@ -2,6 +2,7 @@
 draft = false
 date = "2026-01-20T15:02:15+01:00"
 title = "Emoji-Unterstützung in Git goes to the Moon"
+summary = "Entdecken Sie die sieben Plagen der IT und lernen Sie, wie ein korrekter Umgang mit Zeichenketten Sie vor Irritationen bewahrt. Der Autor teilt seine Erkenntnisse über die Bedeutung von Unicode-Codepunkten und ihre Verwendung in Emoji."
 description = "Git erlaubt die Verwendung von Emojis als Bezeichner für ein Remote-Repository."
 keywords = ["git"]
 slug = "Emoji-Unterstuetzung in Git goes to the Moon"
