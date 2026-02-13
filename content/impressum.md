@@ -33,10 +33,9 @@ Geltungsraum der Versicherung: Deutschland
 
 ## Redaktionell verantwortlich
 
-Oliver Fischer
-Schönhauser Allee 64
+Oliver Fischer \
+Schönhauser Allee 64 \
 10437 Berlin
-
 
 ## Streitschlichtung
 
