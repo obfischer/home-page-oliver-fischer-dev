@@ -10,6 +10,10 @@
 # Node.js staff for Mermaid
 /node_modules
 
+# Possible directories for local installation of Ruby Gems
+/vendor
+/.vendor
+
 # Ruby and Asciidoctor
 /.ruby-version
 
