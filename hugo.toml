@@ -20,7 +20,7 @@ staticDir = "static-content"
         [[menu.main]]
         name = "Impressum"
         pageRef = "/impressum/"
-        weight = 20
+        weight = 100
 
         [[menu.main]]
         name = "LinkedIn"
