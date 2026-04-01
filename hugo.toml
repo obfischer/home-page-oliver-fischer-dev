@@ -18,6 +18,11 @@ staticDir = "static-content"
         weight = 20
 
         [[menu.main]]
+        name = "Knowledge Hub"
+        url = "https://best-practices.oliverfischer.dev/"
+        weight = 20
+
+        [[menu.main]]
         name = "Impressum"
         pageRef = "/impressum/"
         weight = 100
