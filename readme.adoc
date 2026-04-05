@@ -8,3 +8,25 @@ This repository contains an interactice script `hugo-new.sh`, which helps to cre
 ----
 ./bin/hugo-new.sh
 ----
+
+== Local Setup
+
+=== Required Software
+
+- Hugo
+- Ruby 2.6.10
+- rbenv
+- Node.js
+
+Each software packet can be installed via Homebrew.
+
+=== Required Installation Steps
+
+.Setup of a newly created checkout of the page
+[code,bash]
+----
+git submodule update --init
+rbenv local 2.6.10
+bundler install
+npm install
+----
