@@ -7,5 +7,7 @@ fi
 
 echo "$(pwd)"
 
+export PATH=./node_modules/.bin/:$PATH
+
 set -x
 hugo server $@
