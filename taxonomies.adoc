@@ -15,6 +15,7 @@ Ein Artikel wird durch die seine Kategorien Themengebieten zugeordnet.
 * Fundstücke
 * Gedanken
 * Git
+* Human Factor
 * Internationalisierung
 * Software Engineering
 * Spring
