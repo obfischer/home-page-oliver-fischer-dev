@@ -1,0 +1,1 @@
+- [ ] Versuche herauszubekommen, warum beim Diagramm für Entwickler und Coding Agent ich die gemeinsame Menge nicht grüne darstellen kann

@@ -1,0 +1,9 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#ffffff', 'primaryTextColor': '#000000', 'primaryBorderColor': '#333333', 'lineColor': '#333333'}}}%%
+venn-beta
+  set E[Entwickler]:3
+  set A[Coding Agent]:1
+
+  union E,A
+
+  style E fill:magenta
+  style E,A fill:lightgreen
