@@ -1,0 +1,10 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#ffffff', 'primaryTextColor': '#000000', 'primaryBorderColor': '#333333', 'lineColor': '#333333'}}}%%
+venn-beta
+set E[Entwickler]:4
+set B[Benutzer]:4
+set D[Domainexperte]:4
+union B,D:1
+style E fill:magenta
+style D fill:orange
+style B fill:blue
+style B,D fill:lightgreen

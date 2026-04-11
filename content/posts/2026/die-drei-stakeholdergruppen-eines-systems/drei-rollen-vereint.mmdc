@@ -1,0 +1,13 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#ffffff', 'primaryTextColor': '#000000', 'primaryBorderColor': '#333333', 'lineColor': '#333333'}}}%%
+venn-beta
+  set E[Entwickler]
+  set B[Benutzer]
+  set D[Domainexperte]
+  union E,B
+  union E,D
+  union B,D
+  union E,B,D["Geteiltes Wissen"]:12
+  style E fill:magenta
+  style D fill:orange
+  style B fill:blue
+  style E,B,D fill:lightgreen

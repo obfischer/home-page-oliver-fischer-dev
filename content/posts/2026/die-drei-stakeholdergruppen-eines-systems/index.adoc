@@ -1,0 +1,253 @@
+---
+# Quelle: https://gohugo.io/content-management/front-matter/
+
+# Titel des Beitrags
+# Erscheint als <title> im HTML und als H1 auf der Seite
+# Beispiel: "Git Workflow optimieren mit Custom Aliases"
+title: Die drei Stakeholdergruppen eines Systems
+
+# Veröffentlichungsdatum im ISO 8601 Format
+# Wird für Sortierung und Sitemap verwendet
+# Beispiel: 2025-01-22T10:30:00+01:00
+date: 2026-04-11T20:35:39+02:00
+
+# Datum der letzten Aktualisierung
+# Signalisiert Suchmaschinen, dass Content gepflegt wird
+# Bei größeren Updates anpassen, nicht bei Tippfehler-Korrekturen
+# Bei größeren Updates anpassen, nicht bei Tippfehler-Korrekturen
+# Beispiel: 2025-03-15T14:00:00+01:00
+lastmod: 2026-04-11T20:35:48+02:00
+
+# Entwurfsstatus
+# Bei true wird der Beitrag nicht veröffentlicht (außer mit hugo --buildDrafts)
+draft: false
+
+# Meta-Description für Suchmaschinen
+# Erscheint in den Google-Suchergebnissen unter dem Titel
+# Optimal: 150-160 Zeichen, enthält wichtigstes Keyword
+# Beispiel: "Lerne, wie du mit Git Aliases deinen Workflow beschleunigst. Praktische Beispiele für Log-Formatierung und Branch-Management."
+#
+# Bei einer mehrzeiligen Beschreibung kann mit >- gerarbeitet werden
+description: >
+  Artikel zu den drei Möglichen Rollen, die ein Mensch gegenüber
+  einem System einnehmen können.
+
+# Kurzfassung für Listen und Übersichten auf der Website
+# Wird oft auf der Startseite oder in Kategorie-Übersichten angezeigt
+# Kann länger sein als description
+# Beispiel: "Git bietet mächtige Möglichkeiten zur Anpassung. In diesem Artikel zeige ich meine liebsten Aliases und wie du sie einrichtest."
+summary: >
+  Ein Mensch kann einem System gegenüber drei Rollen einnehmen:
+  Anwender, Entwickler und Domainexperte. Je mehr Rollen eine einzelne
+  Person einnehmen kann, desto leichter und besser verläuft der Entwicklungsprozess.
+  Der Idealfall liegt vor, wenn eine Person ein Software-System für ihre eigenen Bedürfnisse schreibt.
+
+# Autor(en) des Beitrags
+# Kann für Autor-Seiten und strukturierte Daten genutzt werden
+# Beispiel: ["Oliver", "Gastautor"]
+authors: ["Oliver B. Fischer"]
+
+# Tags für Verschlagwortung
+# Feingranulare Themen, werden oft in Tag-Clouds angezeigt
+# Beispiel: ["git", "bash", "produktivität", "cli"]
+tags: ["stakeholder", "wissensmanagement"]
+
+# Kategorien für grobe Einordnung
+# Übergeordnete Themenbereiche, meist hierarchisch
+# Beispiel: ["Entwicklung", "Tools"]
+categories: ["Agentic Coding", "Human Factors"]
+
+# Serie für mehrteilige Beiträge
+# Verbindet thematisch zusammenhängende Artikel
+# Stärkt internes Linking und Content-Cluster
+# Beispiel: ["Git Masterclass"]
+series: [] # Gibt es hier nicht
+
+# URL-Slug (letzter Teil der URL)
+# Sollte kurz, lesbar und keyword-reich sein
+# Bindestriche statt Unterstriche verwenden
+# Beispiel: "git-aliases-workflow"
+slug: "die-drei-stakeholdergruppen-eines-systems"
+
+# Vollständige URL (überschreibt Standardpfad)
+# Nur setzen wenn nötig, leer lassen für Standardverhalten
+# Beispiel: "/tutorials/git/aliases/"
+url: ""
+
+# Weiterleitungen von alten URLs
+# Wichtig wenn URLs geändert werden, verhindert 404 und erhält SEO-Wert
+# Beispiel: ["/blog/alte-url/", "/2024/git-tips/"]
+aliases: []
+
+# Keywords für Meta-Tag
+# SEO-Wert heute gering, kann aber für interne Suche nützlich sein
+# Beispiel: ["git alias", "git konfiguration", "git workflow"]
+keywords: ["stakeholder", "wissensverteilgung", "wissensmanagement"]
+
+# Bilder für Social Media Previews (Open Graph, Twitter Cards)
+# Erstes Bild wird als Vorschaubild verwendet
+# Optimale Größe: 1200x630 Pixel
+# Beispiel: ["images/git-workflow-header.png"]
+images: []
+
+# Schema.org Typ für strukturierte Daten (JSON-LD)
+# Hilft Suchmaschinen den Content-Typ zu verstehen
+# Mögliche Werte: "BlogPosting", "Article", "HowTo", "TechArticle"
+# Beispiel: "TechArticle"
+schema:
+  type: "BlogPosting"
+---
+// Achtung! Die gerenderte Überschrift wird aus dem
+// Front-Matter genommen.
+// Grund dafür sind spezifische Anpassungen für das Theme
+// Coder (Stand: 2026-01-22)
+= Die drei Stakeholdergruppen eines Systems
+
+Welche Rollen kann ein Mensch gegenüber einem Softwaresystem einnehmen und wie steht das im Zusammenhang mit OpenSource und dem Gefühl des Self Empowerments, wenn wir mit Coding Agents arbeiten? Los geht es...
+
+== tl;dr
+
+Ein Mensch kann einer Software gegenüber drei Rollen einnehmen: Anwender, Entwickler und Domainexperte.
+Je mehr Rollen eine einzelne Person einnehmen kann, desto leichter und besser verläuft der Entwicklungsprozess.
+Der Idealfall liegt vor, wenn eine Person eine Software für ihre eigenen Bedürfnisse schreibt.
+
+== Apple, HyperCard und zwei Bücher
+
+An der Universität besuchte ich Vorlesungen von PD Dr. Christian Dahme, der sich in seinen Vorlesungen mit tätigkeitstheoretischen Ansätzen und der Interaktion in sozialen  Systemen beschäftigte.
+Zum Anfang des ersten Semesters bei ihm durften wir dann auch seine beiden Bücher kaufen, auf die er als für das Semester wichtig hinwies.
+Seit dem bin ich im Besitz eines Buches zu HyperCard von Apple und eines Buches zur Systemanalyse menschlichen Handelns.
+Letzteres ist 2015 aktualisiert bei Spring erschienen.
+https://link.springer.com/book/10.1007/978-3-658-07372-5[Bei Interesse kann man es sich bei Sprinter Nature in der aktualisierten Ausgabe von 2015 ansehen^].
+
+== Unsere Rolle gegenüber einem Softwaresystem
+
+Aus seiner Vorlesung ist mir vor allem sein Rollenmodell im Gedächtnis geblieben, mit dem er uns erläutert hat, welche Rolle ein Mensch gegenüber einem (Software-)System einnehmen kann und wie sich das auf die Wissensverteilung auswirkt.
+Dieses ist auch heute noch sehr nützlich, um zu verstehen, warum uns manchmal die Entwicklung so leicht von der Hand geht, ein anderes Mal aber ein zähes Ringen um ein gemeinsames Verständnis der Domäne ist.
+
+Dahme hat im Software-Entwicklungsprozess drei Rollen für die Beteiligten gesehen.
+
+1. Die Rolle des Entwicklers
+2. Die Rolle des Anwenders
+3. Die Rolle des Domainexperten
+
+Um eine Software zu entwickeln, braucht es alle drei Rollen.
+Dabei spreche ich hier bewusst von Rollen und nicht von unterschiedlichen Gruppen oder Personen.
+Denn je mehr Rollen sich in einer Person vereinigen oder von mehreren Personen eingenommen werden können, desto eher verbessert sich das Ergebnis, also die von uns entwickelte Software.
+
+
+== Die häufigsten Konstellationen
+
+Schauen wir uns die für diese drei Rollen wichtigsten Konstellationen an.
+
+=== Alles in einer Person - die Idealsituation
+
+Wenn eine Person eine Software für ihre Bedürfnisse selber schreibt, um sie selber einzusetzen, ist das der Idealfall.
+Diese Person weiß, was sie will, denn sie hat das Domainwissen. Zudem weiß sie, wie sie es umsetzen kann, um es dann selber zu nutzen.
+Damit kann sie selber genau genommen den gesamten Demingkreis in sich verbinden und es gibt keinen notwendigen Austausch zur Wissensübertragung mit anderen Personen.
+
+
+.Die drei Rollen haben in einer Person eine gemeinsame Schnittmenge des Wissens
+[mermaid, format=svg, background=00000000]
+....
+include::drei-rollen-vereint.mmdc[]
+....
+
+== Der Domainuser
+
+Der Domainuser benötigt für seinen eigenen Einsatzzweck eine Software, die er selber nutzen will.
+Diese Person vereinigt in sich die Rolle des Anwenders und des Domainexperten.
+Mittels seines Wissens kann er genau beschreiben, was benötigt wird, und anschließend als Nutzer auch gleich validieren, ob das Geforderte richtig umgesetzt wurde, ob es nützlich ist und welche weiteren Funktionen benötigt werden.
+Wie effizient die Entwicklung eines Systems erfolgt, hängt in dieser Konstellation im Wesentlichen von dem Austausch zwischen Entwickler und Domainuser und deren Fähigkeiten zur Kommunikation und Zusammenarbeit ab.
+
+.Domainexperte und Anwender vereinigen sich in einer Person und haben geteiltes Wissen
+[mermaid, format=svg, background=00000000]
+....
+include::rollen-benutzer-experte-vereint.mmdc[]
+....
+
+== Getrennte Welten
+
+Stellt die Vereinigung aller drei Rollen in einer Person die Idealsituation dar, stellt die Verteilung aller drei Rollen auf unterschiedliche Personen die schwierigste Konstellation dar.
+Der Nutzer des Systems verfügt nicht über das notwendige vollständige Domainwissen, sondern benutzt nur das System für seine Teilaufgaben.
+Das diese richtig im richtigen Rahmen ausführt, wird durch das System sichergestellt.
+Der Domainexperte kennt die Domain, doch arbeitet er nicht mit dem System.
+Der Programmierer ist hier auf die reine Umsetzung beschränkt und kann nur auf dem Wissen des Domainexperten aufbauen.
+
+.Die drei beteiligten Rollen teilen kein Wissen
+[mermaid, format=svg, background=00000000]
+....
+include::getrennte-rollen.mmdc[]
+....
+
+
+== Die Anderen
+
+Das hier von mir beschriebene Modell ist an sich nicht neu.
+Es findet sich in ähnlicher Form bei https://de.wikipedia.org/wiki/Jakob_Nielsen_(Schriftsteller)[Jakob Nielsen für den Bereich Usability Engineering^].
+
+Ebenfalls findet es sich beim https://cs.au.dk/research/section-on-human-centered-computing/participatory-design-cscw[Participatory Design und Computer-Supported Cooperative Work (CSCW)^],  wobei der Schwerpunkt hierbei vor allem auf der Kooperation zwischen den einzelnen Gruppen, hier Rollen, liegt.
+
+== Die Relevanz dieser Unterteilung
+
+Die Einteilung der Sicht auf ein System in drei Rollen hilft uns einen Faktor zu verstehen, der dazu beiträgt, warum manche Projekte gut laufen und warum bestimmte Produkte besser sind als andere.
+Je mehr sich diese Rolle nicht auf einzelne Personen konzentriert, je mehr Personen mehr als eine Rolle einnehmen können, desto eher bildet sich ein gemeinsames Verständnis von dem, was zu erreichen ist.
+Das hilft ein gemeinsames Ziel zu etablieren und zu erreichen.
+Gleichzeitig sinkt der Aufwand für den Wissenstransfer und die Gefahr von Transferverlusten und Missverständnissen sowie von Konflikten.
+
+Genau davon profitieren maßgeblich viele Open Source-Projekte in ihrer initialen Phase.
+Sie werden von Menschen begonnen, die die Software schreiben, die sie selber brauchen, um eigene Probleme zu lösen.
+Und wenn es nicht ein Problem ist, ist es die intrinsische Motivation und Neugier.
+
+Auf der anderen Seite stehen Projekte, bei denen kontinuierlich die Velocity fällt, je größer das Projekt wird, je mehr Personen beteiligt sind, das Wissen diffundiert und die Aufgabenverteilung feiner und separierter wird.
+
+== Der einsame Wolf und der Coding Agent
+
+Die Begeisterung vieler Menschen für die Arbeit mit Coding Agents und dem Gefühl, dass auf einmal alles gehen würde, kann nach meiner Ansicht nicht allein damit erklärt werden, dass mittels Coding Agents schneller der erste Prototyp gebaut oder Features für den produktiven Einsatz entwickelt werden können.
+Self Empowerment at it’s best.
+SQL, 4GL und Low Code-Plattformen haben das Gleiche versprochen.
+Es ist die Idealform, in der alle drei Rollen sich vereinen.
+Es fällt damit der notwendige Aufwand für die Kommunikation und den Wissensaustausch mit anderen weg.
+Damit fallen wesentliche Aufwandstreiber wie Wissenstransfer und Konfliktlösung weg.
+Zudem steht über den Coding Agent auch das gesamte Wissen des dahinterstehenden Large Language Models zur Verfügung.
+Nicht das diese allumfassend und feherfrei wäre, doch groß genug, um viele Fragen beantworten zu könen oder sie erst gar nicht stellen zu müssen, da der Coding Agent das Wissen automatisch einwebt.
+Diese Medaille hat zwei Seiten.
+Auf der einen ist es der Idealzustand, in dem wir Systeme schaffen können.
+Gleichzeitig steigt damit auch das Risiko dafür, dass sich mehr und mehr einzelne Inseln an System bilden, die nur von einzelnen Personen gekannt, verstanden und betrieben werden können.
+Das ist die andere Seite der Medaille.
+
+.Mit einem Coding Agenten erweitern wir unsere Wissensbasis
+[mermaid, format=svg, background=00000000]
+....
+include::entwickler-und-coding-agent.mmdc[]
+....
+
+
+== Mögliche Maßnahmen
+
+In der idealen Konstellation hat jede Rolle sein Verständnis für die Bedürfnisse der jeweiligen anderen Rollen und darüber, welches Wissen sie beisteuern können.
+Daher gilt es den Austausch und die Zusammenarbeit zwischen den Trägern dieser Rollen zu fördern. Dies
+wird leider allzuoft nicht getan, weil alle aus falsch verstandenem Effizienzdenken auf ihre jeweilige Rolle beschränkt werden.
+
+Das Grundprinzip hierbei ist immer, dass eine Person eine andere Person mit einer anderen Rolle entweder begleitet oder für eine gewisse Zeit die Aufgaben übernimmt. Und das wiederholt und nicht nur einmalig.
+
+Dafür gibt es zwei einfache Methoden:
+
+- Job Shadowing, bei der eine Person die andere Person bei seiner Arbeit beobachtet
+- Job Takeover, bei der eine Person die Aufgaben einer anderen Person für eine gewisse Zeit übernimmt
+
+
+=== Beispiele
+
+- Ein Produktmanager arbeitet regelmäßig im Support selber mit, um die Bedürfnisse und Arbeitsweise der Supportmitarbeiter besser zu verstehen
+- Ein Supportmitarbeiter begleitet einen Tag einen Entwickler
+- Ein Entwickler übernimmt einen Teil der Recherche- und Analysetätigkeiten des Produktmanagers
+
+
+== Das Ende
+
+Stakeholder werden zu oft vorrangig unter dem Aspekt ihrer Interessen betrachtet.
+Für eine erfolgreiche Produkt- und Software-Entwicklung ist die kooperative Frage danach, wer über welches Wissen verfügt und wie dieses geteilt werden kann, wichtiger.
+Ein wichtiger Aspekt dabei ist der Wille und die Fähigkeit zu Kooperation, Kommunikation und Externalisierung von Wissen.
+Inwieweit sich der Einsatz von LLMs und Coding Agents auf die Rollenverteilung auswirken wird, kann ich jetzt nicht sagen.
+Es könnte sein, dass bei einer konsequenten Externalisierung aller beteiligten Stakeholders die  Trennung in Rollen bei der Umsetzung keine Rolle mehr spielt.
+Wir werden es erleben. 🖖🏻
