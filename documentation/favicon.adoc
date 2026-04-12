@@ -1,0 +1,7 @@
+= Favicon für den Blog
+
+* Generiert über https://favicon.io/favicon-generator/
+- Schrift Leckerli One
+- Inhalt: 2>1
+- Schriftfarbe: `#FFF`
+- Hintergrund `#AAA`

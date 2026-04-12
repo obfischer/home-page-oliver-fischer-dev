@@ -58,8 +58,13 @@ staticDir = "static-content"
     author = "Oliver B. Fischer"
     dateFormat = "2. January 2006"
     description = "Oliver Fischers Blog zu Dingen rund um IT und Sofwareentwicklung"
+    favicon_16 = "favicon-16x16.png"
+    favicon_32 = "favicon-32x32.png"
+    faviconSVG = "favicon.svg"
+    touchicon = "apple-touch-icon.png"
     gravatar = "hallo@oliverfischer.dev"
     hideColorSchemeToggle = true
+    manifest = "site.webmanifest"
     since = 2025
     info = [
         "Digital Product Architect",
