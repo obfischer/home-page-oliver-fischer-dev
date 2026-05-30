@@ -1,0 +1,4 @@
+= Dokumenatation zu customization.css
+
+- Notwendig, weil die Titel über Code-Beispielen einen riesigen Abstand zum Code-Beispiel selber haben
+- Liegt in diesem Ordner, weil aus dem Theme Coder über Hugos Funktion `resources.Get` das CSS aus dem Verzeichnis `assets` geladen wird.

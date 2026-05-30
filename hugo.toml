@@ -49,8 +49,10 @@ staticDir = "static-content"
     [markup.asciidocExt.attributes]
         "showtitle!" = "" # Deaktiviert die Anzeige der obersten Überschrift
         figure-caption = "Abbildung"
+        listing-caption = "Listing"
+        rouge-style = 'tulip'
+        rouge-css = 'style'
         source-highlighter = 'rouge'
-        rouge-style = 'molokai'
         stem = 'latexmath'
         mmdc = "./node_modules/.bin/mmdc"
 
