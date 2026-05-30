@@ -1,0 +1,23 @@
+.listingblock {
+    /* Umstellung auf Flexbox, um später den Titel für das Listing darunter zu positionieren */
+    display: flex;
+    flex-direction: column;
+}
+
+.listingblock > .title {
+    /* Die Beschriftung des Listings soll unter dem Listing stehen und nicht darüber */
+    order: 2;
+}
+
+.listingblock .content {
+    /* Reduziert den Abstand zum nächsten Element unten auf optisch erträglichen Wert */
+    margin-bottom: 0.5rem;
+}
+
+pre {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    width: 100%; /* List soll die gesamte verfügbare Breite einnehmen */
+}
+
