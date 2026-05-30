@@ -49,8 +49,10 @@ staticDir = "static-content"
     [markup.asciidocExt.attributes]
         "showtitle!" = "" # Deaktiviert die Anzeige der obersten Überschrift
         figure-caption = "Abbildung"
+        listing-caption = "Listing"
+        rouge-style = 'tulip'
+        rouge-css = 'style'
         source-highlighter = 'rouge'
-        rouge-style = 'molokai'
         stem = 'latexmath'
         mmdc = "./node_modules/.bin/mmdc"
 
@@ -66,6 +68,7 @@ staticDir = "static-content"
     hideColorSchemeToggle = true
     manifest = "site.webmanifest"
     since = 2025
+    customCSS = ["customization.css"]
     info = [
         "Digital Product Architect",
         "Ich helfe mittelständischen Unternehmen und Organisationen aus einer Geschäftsidee ein funktionierendes digitales Produkt zu machen – von der Konzeption über die technische Umsetzung bis zum Betrieb."
