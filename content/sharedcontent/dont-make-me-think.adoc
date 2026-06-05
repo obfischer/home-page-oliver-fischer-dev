@@ -1,0 +1,5 @@
+= Don't make me think!
+
+// todo Hier auf meinen Artikel zu Don't make me think verweisen
+
+_Don't make me think!_ beschreibt den Ansatz, die kognitive Last bei der Erledigung einer Aufgabe zu reduzieren, welche sich nicht direkt aus der Aufgabe selber ergibt.

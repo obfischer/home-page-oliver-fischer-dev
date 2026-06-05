@@ -12,6 +12,7 @@ Ein Artikel wird durch die seine Kategorien Themengebieten zugeordnet.
 == Categories
 
 * Agentic Coding
+* Best Practices
 * Fundstücke
 * Gedanken
 * Git
