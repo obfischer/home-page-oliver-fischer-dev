@@ -1,0 +1,8 @@
+= Developer Experience
+
+Developer Experience beschreibt die Gesamtheit aller Erfahrungen, die Entwickler bei ihrer Arbeit machen und umfasst sowohl das soziale Umfeld der Arbeit als auch die technische Ausgestaltung der Arbeitsumgebung.
+Die Developer Experience ist umso besser, je leichter und angenehmer sich eine Aufgabe umsetzen lässt, unabhängig von der Aufgabe an sich.
+
+Eine positive Developer-Experience trägt positiv zur Wertsicherung und -entwicklung einer Organisation bei.
+
+// todo Hier auf die Seite verweisen zu Developer Experience

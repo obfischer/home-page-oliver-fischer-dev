@@ -1,0 +1,221 @@
+---
+# Quelle: https://gohugo.io/content-management/front-matter/
+
+# Titel des Beitrags
+# Erscheint als <title> im HTML und als H1 auf der Seite
+# Beispiel: "Git Workflow optimieren mit Custom Aliases"
+title: Das Runtimedata-Verzeichnis als Standard für die lokale Entwicklung
+
+# Veröffentlichungsdatum im ISO 8601 Format
+# Wird für Sortierung und Sitemap verwendet
+# Beispiel: 2025-01-22T10:30:00+01:00
+date: 2026-06-05T17:22:12+02:00
+
+# Datum der letzten Aktualisierung
+# Signalisiert Suchmaschinen, dass Content gepflegt wird
+# Bei größeren Updates anpassen, nicht bei Tippfehler-Korrekturen
+# Beispiel: 2025-03-15T14:00:00+01:00
+lastmod: 2026-06-05T17:22:05+02:00
+
+# Entwurfsstatus
+# Bei true wird der Beitrag nicht veröffentlicht (außer mit hugo --buildDrafts)
+draft: false
+
+# Meta-Description für Suchmaschinen
+# Erscheint in den Google-Suchergebnissen unter dem Titel
+# Optimal: 150-160 Zeichen, enthält wichtigstes Keyword
+# Beispiel: "Lerne, wie du mit Git Aliases deinen Workflow beschleunigst. Praktische Beispiele für Log-Formatierung und Branch-Management."
+#
+# Bei einer mehrzeiligen Beschreibung kann mit >- gearbeitet werden
+# description: ""
+
+# Kurzfassung für Listen und Übersichten auf der Website
+# Wird oft auf der Startseite oder in Kategorie-Übersichten angezeigt
+# Kann länger sein als description
+# Beispiel: "Git bietet mächtige Möglichkeiten zur Anpassung. In diesem Artikel zeige ich meine liebsten Aliases und wie du sie einrichtest."
+summary: >-
+  Alle temporären Dateien in einer lokalen Entwicklungsumgebung immer im Verzeichnis runtimedata abzulegen stellt eine
+  wesentliche Vereinfachung des lokalen Entwicklungssetups dar und steigert die Entwicklungseffizienz.
+
+# Autor(en) des Beitrags
+# Kann für Autor-Seiten und strukturierte Daten genutzt werden
+# Beispiel: ["Oliver", "Gastautor"]
+authors: ["Oliver B. Fischer"]
+
+# Tags für Verschlagwortung
+# Feingranulare Themen, werden oft in Tag-Clouds angezeigt
+# Beispiel: ["git", "bash", "produktivität", "cli"]
+tags: []
+
+# Kategorien für grobe Einordnung
+# Übergeordnete Themenbereiche, meist hierarchisch
+# Beispiel: ["Entwicklung", "Tools"]
+categories: ["Best Practices"]
+
+# Serie für mehrteilige Beiträge
+# Verbindet thematisch zusammenhängende Artikel
+# Stärkt internes Linking und Content-Cluster
+# Beispiel: ["Git Masterclass"]
+series: []
+
+# URL-Slug (letzter Teil der URL)
+# Sollte kurz, lesbar und keyword-reich sein
+# Bindestriche statt Unterstriche verwenden
+# Beispiel: "git-aliases-workflow"
+slug: "das-runtimedata-verzeichnis-als-standard-fuer-die-lokale-entwicklung"
+
+# Vollständige URL (überschreibt Standardpfad)
+# Nur setzen wenn nötig, leer lassen für Standardverhalten
+# Beispiel: "/tutorials/git/aliases/"
+url: ""
+
+# Weiterleitungen von alten URLs
+# Wichtig wenn URLs geändert werden, verhindert 404 und erhält SEO-Wert
+# Beispiel: ["/blog/alte-url/", "/2024/git-tips/"]
+aliases: []
+
+# Keywords für Meta-Tag
+# SEO-Wert heute gering, kann aber für interne Suche nützlich sein
+# Beispiel: ["git alias", "git konfiguration", "git workflow"]
+keywords: []
+
+# Bilder für Social Media Previews (Open Graph, Twitter Cards)
+# Erstes Bild wird als Vorschaubild verwendet
+# Optimale Größe: 1200x630 Pixel
+# Beispiel: ["images/git-workflow-header.png"]
+images: []
+
+# Schema.org Typ für strukturierte Daten (JSON-LD)
+# Hilft Suchmaschinen den Content-Typ zu verstehen
+# Mögliche Werte: "BlogPosting", "Article", "HowTo", "TechArticle"
+# Beispiel: "TechArticle"
+schema:
+  type: "BlogPosting"
+---
+// Achtung! Die gerenderte Überschrift wird aus dem
+// Front-Matter genommen.
+// Grund dafür sind spezifische Anpassungen für das Theme
+// Coder (Stand: 2026-01-22)
+= Das Runtimedata-Verzeichnis als Standard für die lokale Entwicklung
+
+== tl;dr
+
+- In lokalen Entwicklungsumgebungen werden temporäre Dateien oft zufällig an verschiedenen Orten abgelegt
+- Die richtigen Daten zu finden und das System dahinter zu verstehen erhöht die kognitive Last
+- Die einfache Regel, alle temporären Daten und Dateien immer unterhalb eines dedizierten Verzeichnisses abzulegen, führt zu einer wesentlichen Vereinfachung der Entwicklungsarbeit
+
+// todo Wenn ich einen Artikel zur Entwickler Experience habe, dann hier verlinken
+Die lokale Entwicklungsumgebung ist der Ort, wo neue Werte, Ideen und Funktionen entstehen, wenn die Developer Experience stimmt, also die Entwicklung leicht von der Hand geht.
+Eine häufige Aufgabe, die bei der Einrichtung der lokalen Entwicklungsumgebung auftritt, ist die Entscheidung, wo wir temporäre Daten und Dateien ablegen, die bei der Entwicklung und beim Testen entstehen, wenn ein Testsystem aufgesetzt, in ihm getestet oder Integrationstests ausgeführt werden.
+Gibt es auf diese Frage keine direkte und von allen geteilte Antwort, entstehen Fragen danach, wo etwas abgelegt oder gefunden wird.
+Wo liegen die Logfiles, mit denen das Verhalten des Systems nachvollzogen werden kann?
+Wo werden die Dateien für den Datenaustausch hingeschrieben oder von wo können sie geladen werden?
+Wo soll die PostgreSQL-Datenbank ihre Datafiles ablegen, wenn sie als Docker-Container ausgeführt wird?
+
+In jedem Projekt wird das anders gehandhabt.
+Ein neues Projekt.
+Alles anders.
+Jedes Mal die gleiche Frage.
+Jedes Mal eine andere Antwort.
+Oft gibt es auch keine Antwort und dementsprechend steigt die Varianz in dem Projekt und unser Aufwand, um unsere Aufgabe zu vollbringen, wächst.
+
+Wie wäre es mit einem Standard für die Frage: Wo kommen all die Daten und Dateien hin, die wir temporär brauchen, aber nicht unter Versionskontrolle sollen?
+
+Hierfür einen Standard zu haben, zahlt auf zwei wesentliche Punkte in der Software-Entwicklung ein: die Developer Experience und das Prinzip _Don't make me think!_.
+
+include::../../../sharedcontent/developer-experience.adoc[leveloffset=+1]
+include::../../../sharedcontent/dont-make-me-think.adoc[leveloffset=+1]
+
+== Ein dediziertes Verzeichnis für Laufzeitdaten und -dateien
+
+Die oben gestellte Frage kann einfach offen gelassen und damit im Status Quo belassen werden, durch viele einzelne Regelungen geregelt oder pragmatisch mit einer einfachen Regelung gelöst werden.
+Die letztere Variante sollte dabei so einfach sein, dass sie in einem einfachen Satz ausgedrückt werden kann:
+
+> Alle temporären Daten und Dateien liegen im Verzeichnis `runtimedata`.
+
+Das heißt, dass alle Dateien, die wir nur während der lokalen Entwicklung brauchen und niemals unter Versionskontrolle gestellt werden sollen, sich immer unterhalb eines dedizierten Verzeichnisses befinden.
+
+Dieses Verzeichnis hat die folgenden Eigenschaften:
+
+. Es heißt _runtimedata_.
+. Es befindet sich immer im Wurzelverzeichnis des Projektverzeichnisses der lokalen Entwicklungsumgebung.
+. Es ist von der Versionsverwaltung ausgeschlossen.
+
+Mit der Einführung dieses Verzeichnisses gibt es einen kanonischen Ort, an dem sich alle eingangs genannten Daten und Dateien ablegen und finden lassen.
+
+Diesen kanonischen Ort zu haben bringt Vorteile, die sich sofort auszahlen:
+
+. Es ist klar, wo neue temporäre Dateien abgelegt werden sollen.
+. Es ist klar, wo temporäre Dateien gefunden werden können.
+. Aufräumen ist leicht mittels `rm -r -f runtimedata/*` oder `git clean -f -d -x runtimedata`
+
+== Ein Beispielsetup
+
+Wie das in einem realen Projekt aussehen kann, zeigt das folgende Beispiel aus einem meiner aktuellen Projekte.
+
+Das geforderte Verzeichnis `runtimedata` befindet sich, wie in <<listing-projektstruktur>> zu sehen, im Wurzelverzeichnis des Projektverzeichnisses.
+
+[#listing-projektstruktur,reftext="Listing 1"]
+.Das Verzeichnis `runtimedata` in einem Projekt
+[source,terminaloutput]
+----
+$ tree --charset=ascii
+.
+|-- antora-playbook.yml
+|-- antora.yml
+|-- bin
+|-- codebase
+|-- compose.yaml
+|-- database-init-files.d
+|-- Dockerfile
+|-- keycloak-init-files.d
+|-- modules
+|-- mvnw
+|-- pgadmin-config-init-files.d
+|-- pom.xml
+|-- public-site.d
+|-- run-antora.sh
+`-- runtimedata        <1>
+
+12 directories, 13 files
+----
+<1> Das Verzeichnis `runtimedata` in einem meiner Projekte
+
+Das <<listing-runtimedata>> zeigt, dass sich im Verzeichnis alle temporären Dateien befinden, wie die Logfiles der Services, die Datafiles der Datenbank und ein Readme.
+Das Readme beschreibt kurz die Natur dieses Verzeichnisses, damit seine Verwendung direkt im Projekt dokumentiert ist.
+
+[#listing-runtimedata,reftext="Listing 2"]
+.Beispielinhalt des Verzeichnisses `runtimedata`
+[source,terminaloutput]
+----
+$ tree --charset=ascii -L 1  runtimedata
+runtimedata/
+|-- dataimport   <1>
+|-- logs         <2>
+|-- postgresql   <3>
+`-- readme.adoc  <4>
+
+4 directories, 1 file
+----
+<1> Verzeichnis für den Austausch von Daten mit externen Services
+<2> Verzeichnis für Logdateien der Services
+<3> Datafiles von PostgreSQL
+<4> Ein Readme zur Verwendung des Verzeichnisses `runtimedata`
+
+Der geforderte Ausschluss aus der Versionsverwaltung wird durch zwei weitere Einträge in `.gitignore` sichergestellt.
+
+.Auszug aus `.gitignore` für die richtige Behandlung des Verzeichnisses `runtimedata`
+[source,gitexclude]
+----
+runtimedata/**           <1>
+!runtimedata/**/*.adoc   <2>
+----
+<1> Ausschluss aller Dateien in diesem Verzeichnis aus Git
+<2> Ausnahme für das Readme mit den Hinweisen für die Verwendung des Verzeichnisses
+
+== Fazit
+
+Das lokale Entwicklungssetup ist einer der am meisten unterschätzten Orte für Effizienzgewinne in der Entwicklung.
+Durch eine einfache Regel wie die Festlegung eines kanonischen Ortes für alle temporären Dateien lässt sich die lokale Entwicklung vereinfachen.
+Ein Punkt weniger, über den wir nachdenken müssen und zu dem wir Entscheidungen treffen müssen, obwohl sie nichts mit der eigentlichen Wertschöpfung zu tun haben, weil wir uns auf sinnvolle und effektive Standards verlassen können.
+Don't make me think!
