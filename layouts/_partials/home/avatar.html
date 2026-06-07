@@ -1,0 +1,19 @@
+{{/*
+    Anpassung des gleichnamigen Templates aus dem Coder-Theme.
+    Unterschied ist, dass, es für das Bild von Gravatar
+    die Parameter with and heigth gesetzt werden.
+
+    Hier gibt es zusätzlich einen PR unter
+    https://github.com/luizdepra/hugo-coder/pull/999
+*/}}
+
+{{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
+{{ with .Site.Params.avatarURL }}
+<div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
+{{ end }}
+{{ end }}
+{{ with .Site.Params.gravatar }}
+<div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp"
+                         alt="gravatar"
+                         width="240" height="240"/></div>
+{{ end }}
