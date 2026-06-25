@@ -82,3 +82,8 @@ staticDir = "static-content"
 [security]
     [security.exec]
         allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$', '^asciidoctor$']
+
+[taxonomies]
+    category = 'categories' # default taxonomy
+    tag = 'tags' # default taxonomy
+    series = "series"

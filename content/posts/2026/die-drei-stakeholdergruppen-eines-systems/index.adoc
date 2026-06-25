@@ -61,7 +61,7 @@ categories: ["Agentic Coding", "Human Factors"]
 # Verbindet thematisch zusammenhängende Artikel
 # Stärkt internes Linking und Content-Cluster
 # Beispiel: ["Git Masterclass"]
-series: [] # Gibt es hier nicht
+series: ["CommandLineInterfaces"]
 
 # URL-Slug (letzter Teil der URL)
 # Sollte kurz, lesbar und keyword-reich sein

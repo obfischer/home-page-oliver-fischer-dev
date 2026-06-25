@@ -56,8 +56,7 @@ categories: ["Best Practices"]
 # Verbindet thematisch zusammenhängende Artikel
 # Stärkt internes Linking und Content-Cluster
 # Beispiel: ["Git Masterclass"]
-series: []
-
+series: ["CommandLineInterfaces"]
 # URL-Slug (letzter Teil der URL)
 # Sollte kurz, lesbar und keyword-reich sein
 # Bindestriche statt Unterstriche verwenden
