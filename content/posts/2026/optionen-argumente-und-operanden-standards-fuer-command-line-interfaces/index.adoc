@@ -105,26 +105,35 @@ Gerade arbeite ich an einem Vortrag über Command Line Clients in Java, motivier
 Wer sich mit Command Line Clients beschäftigt, der kommt am Thema Optionen und Argumente nicht vorbei. Wer einen Vortrag hält oder generell anderen Wissen vermitteln will, der muss sich mit den Grundlagen beschäftigen, um Kontext zu bilden und Dinge richtig benennen zu können. Vom Vagen zum Konkreten. Also, was passiert da auf der Befehlszeile?
 
 
-# Die Sprünge
-Die Nutzung eines Command Line Client, vereinfachend ab jetzt als Cli bezeichnet, setzt eine Befehlszeile voraus, über die wir  mit der Maschine Computer kommunizieren können. Vermutlich war das erste System, mit einer interaktiven Kommunikation über getippten Text Compatible Time-Sharing System (CTSS). Davor beherrschten Stapel-Systeme die Welt, in der Programme im Batch-Betrieb abgearbeitet wurden, ohne Möglichkeiten des Eingriffs oder der Interaktion mit einen Benutzer.
+== Die Ursprünge
 
-CTSS wurde am MIT entwickelt und basierte auf einen Memo von John McCarthy an Professor P.M. Morse, der zu der Zeit  Direktor des MIT Computation Center war, in dem er vorschlug ein Time Sharing System einzuführen, um Computer effizienter für die Entwicklung von Programmen nutzen zu können. Die Entwicklung eines Programmes beinhaltet immer einen Zyklus auf Entwicklung und Debugging. Dafür wurden geschriebene Programme beim Computation Center abgeben und nach bis zu 36 Stunden erhielt man da Ergebnis. Wenn sich mehrere Personen einen Rechner teilen könnten, könnte man diese Zeit auf 1 Sekunden reduzieren.
+Die Nutzung eines Command Line Client, vereinfachend ab jetzt als Cli bezeichnet, setzt eine Befehlszeile voraus, über die wir  mit der Maschine Computer kommunizieren können. Vermutlich war das erste System, mit einer interaktiven Kommunikation über getippten Text Compatible Time-Sharing System (CTSS). Davor beherrschten Stapel-Systeme die Welt, in der Programme im Batch-Betrieb abgearbeitet wurden, ohne Möglichkeiten des Eingriffs oder der Interaktion mit einem Benutzer.
 
->  The response time of the MIT Computation Center to a performance request presently varies from 3 hours to 36 hours depending on the state of the machine, the efficiency of the operator, and the backlog of work. We propose by time sharing, to reduce this response time to the order of 1 second for certain purposes.
+CTSS wurde am MIT entwickelt und basierte auf einen Memo von John McCarthy an Professor P.M. Morse,
+footnote:[John McCarthy, MEMORANDUM TO P. M. MORSE PROPOSING TIME SHARING, https://www-formal.stanford.edu/jmc/history/timesharing-memo/timesharing-memo.html]
+der zu der Zeit  Direktor des MIT Computation Center war, in dem er vorschlug ein Time Sharing System einzuführen, um Computer effizienter für die Entwicklung von Programmen nutzen zu können. Die Entwicklung eines Programmes beinhaltet immer einen Zyklus auf Entwicklung und Debugging. Dafür wurden geschriebene Programme beim Computation Center abgeben und nach bis zu 36 Stunden erhielt man da Ergebnis. Wenn sich mehrere Personen einen Rechner teilen könnten, könnte man diese Zeit auf 1 Sekunden reduzieren.
 
-Dafür müßte ein Rechner mit einer Tastatur und einem Typewriter, quasi einer Schreibmaschine, ausgestattet werden.
+[quote,John McCarthy, MEMORANDUM TO P. M. MORSE PROPOSING TIME SHARING]
+____
+The response time of the MIT Computation Center to a performance request presently varies from 3 hours to 36 hours depending on the state of the machine, the efficiency of the operator, and the backlog of work. We propose by time sharing, to reduce this response time to the order of 1 second for certain purposes.
+____
 
-> Suppose that the programmer has a keyboard at the computer and is equipped with a substantial improvement on the TXO interro- gation and intervention program (UT3). (The improvements are in the direction of expressing input and output in a good programming language.) Then he can try his program, interrogate individual pieces of data or program to find an error, make a change in the source language and try again.
+Dafür müsste ein Rechner mit einer Tastatur und einem Typewriter, quasi einer Schreibmaschine, ausgestattet werden.
+
+[quote,John McCarthy, MEMORANDUM TO P. M. MORSE PROPOSING TIME SHARING]
+____
+Suppose that the programmer has a keyboard at the computer and is equipped with a substantial improvement on the TXO interro- gation and intervention program (UT3). (The improvements are in the direction of expressing input and output in a good programming language.) Then he can try his program, interrogate individual pieces of data or program to find an error, make a change in the source language and try again.
+____
 
 Interessanter Weise führt er als einen wesentlichen Faktor zur Verbesserung des, wie wir heute sagen würden, Entwicklungsprozesses an, dass wenn der Zyklus zwischen dem Schreiben, der Ausführung, der Fehlersuche und der Korrektur des Programmes verkürzt wird, der Programmier genau weiß, woran er gerade arbeitet und sich nicht erst mühsam an das erinnern muss, was er vor eineinhalb Tagen erarbeitet hat. Heute würde man vielleicht sagen, dass sein Kontextfenster noch aktuell ist.
 
 Als CTSS dann im November 1961 eingeführt wurde, stand erstmals ein System zur Verfügung, mit dem interaktiv mit einem Computer gearbeitet werden konnte über die Eingabe von Befehlen.
 
-## Fernschreiber für die Befehlszeile
+=== Fernschreiber für die Befehlszeile
 
 Seit damals hat sich die Befehlszeile konzeptionell nicht wesentlich verändert, doch in ihrem Auftreten schon. Anstatt von Tastatur und Bildschirm kam ein Fernschreiber zum Einsatz, über den der Benutzer seine Befehle eingeben und die Antworten vom Computer erhalten konnte.
 
-Fernschreiber waren einen etablierte Technik und billig. Billig im Vergleich zur Alternative eines Monitors. Dabei war der Monitor selber nicht das Problem, sondern der für den Betrieb des Monitors notwendige Speicher. Ein Röhrenmonitor (Kathodenstrahlröhrenbildschirm) nutzt für die Erzeugung eines Bildes einen Elektronenstrahl, der beim Auftreffen auf einer Leuchtstoffschicht ein sichtbares Bild erzeugt. Da die Information selber damit verloren geht, müßte sie für eine Monitordarstellung dauerhaft in einem Speicher abgelegt werden. Da der dafür notwendige Speicher sehr teuer war, war das keine Option.
+Fernschreiber waren einen etablierte Technik und billig. Billig im Vergleich zur Alternative eines Monitors. Dabei war der Monitor selber nicht das Problem, sondern der für den Betrieb des Monitors notwendige Speicher. Ein Röhrenmonitor (Kathodenstrahlröhrenbildschirm) nutzt für die Erzeugung eines Bildes einen Elektronenstrahl, der beim Auftreffen auf einer Leuchtstoffschicht ein sichtbares Bild erzeugt. Da die Information selber damit verloren geht, müßte sie für eine Monitordarstellung dauerhaft in einem Speicher abgelegt werden. Da der dafür notwendige Speicher sehr teuer war, war das keine Option. Zudem bot die Mitschrift durch den Fernschreiber auch von jeder Sitzung ein Protokoll zu erhalten.
 
 
 ---
