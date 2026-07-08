@@ -135,18 +135,53 @@ Seit damals hat sich die Befehlszeile konzeptionell nicht wesentlich verändert,
 
 Fernschreiber waren einen etablierte Technik und billig. Billig im Vergleich zur Alternative eines Monitors. Dabei war der Monitor selber nicht das Problem, sondern der für den Betrieb des Monitors notwendige Speicher. Ein Röhrenmonitor (Kathodenstrahlröhrenbildschirm) nutzt für die Erzeugung eines Bildes einen Elektronenstrahl, der beim Auftreffen auf einer Leuchtstoffschicht ein sichtbares Bild erzeugt. Da die Information selber damit verloren geht, müßte sie für eine Monitordarstellung dauerhaft in einem Speicher abgelegt werden. Da der dafür notwendige Speicher sehr teuer war, war das keine Option. Zudem bot die Mitschrift durch den Fernschreiber auch von jeder Sitzung ein Protokoll zu erhalten.
 
-Auf https://www.youtube.com/watch?v=sjnmcKVnLi0[Youtube gibt es ein Video von Robert Fano^]footnote:[https://de.wikipedia.org/wiki/Robert_Fano] aus den frühen 1960er Jahren, in dem er die Nutzung von CTSS demonstriert, ungefähr ab Minute 5, des Videos.
-Die folgenden Bilder sind diesem Video entnommen.
-
-.Fano bei der Nutzung von CTSS über einen Fernschreiber
-image::2026-07-08_19-29-19.png[]
-
-.Die Tastatur des Fernschreibers für den Dialog mit CTSS
-image::2026-07-08_19-30-01.png[]
-
-.Ausdruck des Dialogs zwischen Fano und CTSS
+.ddd
 image::2026-07-08_19-31-27.png[]
 
+---
+Alt
+---
+
+Optionen, Argumente und Operanden: Standards für Command Line Interface kann jetzt geschrieben werden.
+
+== tl;dr
+
+---
+
+Das Terminal öffnet sich und wir tippen, um Programme aufzurufen, die für uns arbeiten.
+Befehle wie `ls -lah` oder `claude --model claude-sonnet-4-6` sind uns in Fleisch und Blut übergegangen.
+Doch was ist das, was wir dort tippen nach dem Namen des Programms und nach welchen Konventionen sollte man sich richten, wenn man selber Programme schreiben will?
+
+In diesem Artikel beschäftige ich mich mit den Grundlagen der Steuerung von Command Line Interfaces über Optionen und Argumente sowie der Klärung der relevanten Standards.
+
+== Optionen, Operanden und Argumente an lebenden Beispielen
+
+Sehen wir uns ein paar Beispiele von Aufrufen von Command Line Interfaces, ab jetzt verwende ich nur noch den Begriff Cli für Command Line Interfaces, an.
+
+[#listing-sort,reftext="Listing 1"]
+.Sortierung von Textdateien mit `sort`
+[source,shell]
+----
+$ cat data.txt
+cat data.txt
+Peter	180
+Agit	175
+Anna	175
+Susi	195
+$ sort -r \     <1>
+       -k 2 \   <2><3>
+       data.txt <4>
+Susi	195
+Peter	180
+Anna	175
+Agit	175
+----
+<1> Umgekehrte Sortierung der Daten
+<2> Sortierung soll nach einem bestimmten Feld erfolgen
+<3> Verwendung von Feld 2 für die Sortierung
+<4> Zu sortierende Datei
+
+In <<listing-sort>> werden Datensätze nach dem zweiten Feld pro Datensatz sortiert, sodass die Personen nach der Größe sortiert ausgegeben werden können.
 
 // https://claude.ai/share/385531ff-70b1-4fbe-b198-bc8e6f5c2d1a
 //
@@ -176,3 +211,9 @@ image::2026-07-08_19-31-27.png[]
 
 - Compatible Time-Sharing System (1961–1973). Fiftieth Anniversary Commemorative Overview, Washington, DC 2012
 https://multicians.org/thvv/compatible-time-sharing-system.pdf
+
+https://www.youtube.com/watch?v=sjnmcKVnLi0
+
+https://www-formal.stanford.edu/jmc/history/timesharing-memo/timesharing-memo.html
+MEMORANDUM TO P. M. MORSE PROPOSING TIME SHARING
+
