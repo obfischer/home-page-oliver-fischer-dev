@@ -138,14 +138,21 @@ Fernschreiber waren einen etablierte Technik und billig. Billig im Vergleich zur
 Auf https://www.youtube.com/watch?v=sjnmcKVnLi0[Youtube gibt es ein Video von Robert Fano^]footnote:[https://de.wikipedia.org/wiki/Robert_Fano] aus den frühen 1960er Jahren, in dem er die Nutzung von CTSS demonstriert, ungefähr ab Minute 5, des Videos.
 Die folgenden Bilder sind diesem Video entnommen.
 
-.Fano bei der Nutzung von CTSS über einen Fernschreiber
-image::2026-07-08_19-29-19.png[]
+:fano_alt_1: Fano bei der Nutzung von CTSS über einen Fernschreiber
 
-.Die Tastatur des Fernschreibers für den Dialog mit CTSS
-image::2026-07-08_19-30-01.png[]
+.{fano_alt_1}
+image::2026-07-08_19-29-19.png[{fano_alt_1}]
 
-.Ausdruck des Dialogs zwischen Fano und CTSS
-image::2026-07-08_19-31-27.png[]
+:fano_alt_2: Die Tastatur des Fernschreibers für den Dialog mit CTSS
+
+.{fano_alt_2}
+image::ctss-fernschreiber-tastatur.png[{fano_alt_2}]
+
+:fano_alt_3: Ausdruck des Dialogs zwischen Fano und CTSS
+
+.{fano_alt_3}
+image::ctss-fano-protokoll.png[{fano_alt_3}]
+
 
 
 // https://claude.ai/share/385531ff-70b1-4fbe-b198-bc8e6f5c2d1a
