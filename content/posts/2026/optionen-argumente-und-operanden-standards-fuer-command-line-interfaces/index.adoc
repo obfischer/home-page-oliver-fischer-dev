@@ -141,7 +141,7 @@ Die folgenden Bilder sind diesem Video entnommen.
 :fano_alt_1: Fano bei der Nutzung von CTSS über einen Fernschreiber
 
 .{fano_alt_1}
-image::2026-07-08_19-29-19.png[{fano_alt_1}]
+image::fano-vor-ctss-fernschreiber.png[{fano_alt_1}]
 
 :fano_alt_2: Die Tastatur des Fernschreibers für den Dialog mit CTSS
 
