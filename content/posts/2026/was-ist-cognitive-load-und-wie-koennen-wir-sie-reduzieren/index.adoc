@@ -151,18 +151,5 @@ Ausschlaggebend für diese Neudefinition ist, dass alle Arten der Belastung beim
 ICL wird in dieser aktuelleren Aufteilung als die Zahl der Elemente, die gleichzeitig im Arbeitsgedächtnis gehalten werden müssen, definiert und unabhängig von der ECL, also der Darstellung und Aufbereitung ist. Die in die ICL integrierte Germane Cognitive Load ist der Teil des Arbeitsgedächtnisses, der für die Konstruktion von Denkmustern aufgewandt werden kann.
 
 
-Notizen für später:
-Element Interactivity ist keine Feste Größe, sondern hängt vom Wissensgrad der PErson ab.
-
-Claude: IL: Sie hängt vom Vorwissen und der Komplexität der Aufgabe ab. Anders als die extraneous Load lässt sie sich nicht durch bessere Aufbereitung senken — wohl aber durch Aufbau von Vorwissen und schrittweise Sequenzierung des Stoffs.
-
-== Beispiele für Intrinsic und Extraneous Cognitive Load
-
-
-== Lernen ist der Erwerb von Handlungsschemas
-
-
-Lernen ist das Erwerben von Faktenwissen und Handlungswissen. Bei der Aneignung von Handlungswissen wird ein Schema aufgebaut, das im Langzeitgedächtnis verankert wird und später in der richtigen Situation unbewußt abgerufen werden kann und zu der richtigen Handlung führt.
-
 
 
