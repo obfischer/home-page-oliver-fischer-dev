@@ -3,12 +3,18 @@ block-beta
   block:wm
     columns 6
     titel["Arbeitsgedächtnis – feste Kapazität"]:6
-    IL["Intrinsic Load"]:2
-    frei["freie Kapazitäteeee"]:3
+    block:essenziell:2
+      columns 2
+      IL["Intrinsic Load"]
+      GL["Germane Load"]
+    end
+    frei["freie Kapazität"]:3
     EL["Extraneous Load"]:1
   end
   style wm fill:#f8f8f8,stroke:#333,stroke-width:2px
   style titel fill:transparent,stroke:transparent
+  style essenziell fill:#f0e0e0,stroke:#333
   style IL fill:#e8b4b4,stroke:#333
+  style GL fill:#d4d4e8,stroke:#333
   style frei fill:#d4e8d4,stroke:#333
   style EL fill:#e8d4b4,stroke:#333

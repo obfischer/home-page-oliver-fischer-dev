@@ -14,3 +14,6 @@ Lernen ist das Erwerben von Faktenwissen und Handlungswissen. Bei der Aneignung 
 
 Pre Training:
 Sequenzierung
+
+Schemata aufbauen — die intrinsic Load selbst sinkt über die Zeit, weil das Vorwissen wächst. Was anfangs sieben Elemente waren, wird ein Schema. Dadurch wird Kapazität frei, die vorher gebunden
+
