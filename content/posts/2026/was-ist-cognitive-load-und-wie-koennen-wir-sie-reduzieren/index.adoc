@@ -143,9 +143,12 @@ Sweller unterscheidet ursprünglich in drei Teilarten von Cognitive Load: Intrin
 *Germane cognitive load* (lernbezogene kognitive Belastung) ist der Denkaufwand, der beim Wissenserwerb aktiv durch den Lernenden zur Konstruktion von Denkmustern aufgewandt wird.
 
 Dieses Modell ist sehr gut geeignet, um sich die Aufteilung vereinfacht vorstellen zu können.
-Später wurde diese Dreiteilung zu Gunsten einer Aufteilung auf Intrinsic Cognitive Load und Extrinsic Cognitive Load aufgegeben. Die Germane Cognitive Load wurde in die Intrinsic Cognitive Load integriert, vorallem weil man sie nicht als eigene Größe zuverlässig messen konnte.
+
+Später wurde diese Dreiteilung zu Gunsten einer Aufteilung auf Intrinsic Cognitive Load und Extrinsic Cognitive Load aufgegeben. Die Germane Cognitive Load wurde in die Intrinsic Cognitive Load integriert, vorallem, weil man sie nicht als eigene Größe zuverlässig messen konnte.
 
 Ausschlaggebend für diese Neudefinition ist, dass alle Arten der Belastung beim Lernen im Arbeitsgedächtnis erfolgen, in dem wie oben erwähnt immer nur eine begrenzte Anzahl von Elementen gehalten werden kann, die miteinander interagieren können.
+Um die drei Belastungsarten mit der gleichen Größe beschreiben zu können, wurde die Element Interactivity eingeführt.
+Diese beschreibt wie viele Elemente miteinander gleichzeitig für die Bearbeitung einer Belastungsart interagieren müssen.
 
 
 ICL wird in dieser aktuelleren Aufteilung als die Zahl der Elemente, die gleichzeitig im Arbeitsgedächtnis gehalten werden müssen, definiert und unabhängig von der ECL, also der Darstellung und Aufbereitung ist. Die in die ICL integrierte Germane Cognitive Load ist der Teil des Arbeitsgedächtnisses, der für die Konstruktion von Denkmustern aufgewandt werden kann.

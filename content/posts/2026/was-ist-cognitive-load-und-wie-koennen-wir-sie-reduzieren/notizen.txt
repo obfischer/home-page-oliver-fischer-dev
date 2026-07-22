@@ -11,3 +11,6 @@ Claude: IL: Sie hängt vom Vorwissen und der Komplexität der Aufgabe ab. Anders
 
 
 Lernen ist das Erwerben von Faktenwissen und Handlungswissen. Bei der Aneignung von Handlungswissen wird ein Schema aufgebaut, das im Langzeitgedächtnis verankert wird und später in der richtigen Situation unbewußt abgerufen werden kann und zu der richtigen Handlung führt.
+
+Pre Training:
+Sequenzierung
