@@ -96,8 +96,8 @@ schema:
 // Coder (Stand: 2026-01-22)
 = Was ist Cognitive Load und wie können wir sie reduzieren
 
-Vielleicht kennen Sie diese Situation. Jemand bitte sie die Arbeit von einem Kollegen zu übernehmen, der verlässt die Firma und es müsse noch eine Übernahme gemacht werden. Alle sind beschäftigt und die Übernahme findet am vorletzten Tag statt. Sie setzen sich mit dem Kollegen zusammen, in Persona oder virtuell, den er solle  ihnen seine Arbeit zeigen. Ein Termin solle ja dafür reichen. Er beginnt mit seiner Arbeit, fließend und schnell, springt zwischen Anwendungen hin und her, erklärt in eigenen Worten was er macht, sie fragen nach. Der Termin ist zu Ende.
-Am nächsten Montag sind Sie dran seine Arbeit zu übernehmen. Sie sind eingeführt worden. Doch wie viel haben sie gelernt und können es fortführen?
+Vielleicht kennen Sie diese Situation. Jemand bittet Sie, die Arbeit von einem Kollegen zu übernehmen, der verlässt die Firma und es müsse noch eine Übernahme gemacht werden. Alle sind beschäftigt und die Übernahme findet am vorletzten Tag statt. Sie setzen sich mit dem Kollegen zusammen, in Persona oder virtuell, denn er solle Ihnen seine Arbeit zeigen. Ein Termin solle ja dafür reichen. Er beginnt mit seiner Arbeit, fließend und schnell, springt zwischen Anwendungen hin und her, erklärt in eigenen Worten, was er macht, Sie fragen nach. Der Termin ist zu Ende.
+Am nächsten Montag sind Sie dran, seine Arbeit zu übernehmen. Sie sind eingeführt worden. Doch wie viel haben Sie gelernt und können es fortführen?
 
 Vielleicht wirkt diese Geschichte überzeichnet, doch ist sie es nicht. Etwas Ähnliches habe ich erst kürzlich selber erlebt und es war nicht effektiv.
 
@@ -105,9 +105,9 @@ Vielleicht wirkt diese Geschichte überzeichnet, doch ist sie es nicht. Etwas Ä
 
 Cognitive Load drückt die Beanspruchung unseres Gehirns aus, die wir beim Lernen erfahren. Also, ob uns die Aneignung von Wissen leicht oder schwerfällt. Die Beanspruchung hängt dabei nicht alleine von der Aufgabe ab. Sie hängt auch von den Umständen ab, unter denen wir die Aufgabe lösen müssen.
 
-Dabei gibt es einen Punkt, an dem die Belastung so groß wird, dass es zu einer Überlasung (Overload) kommt, ab dem das Ergebnis nicht mehr optimal für die einzelne Person ist. Wir eignen uns zwar noch Wissen an, doch es kann Lücken aufweisen oder nicht zusammenhängend sein. Das wiederum führt zu mehr Aufwand beim Lernen, die Kosten steigen, auch weil Fehler häufiger auftreten.
+Dabei gibt es einen Punkt, an dem die Belastung so groß wird, dass es zu einer Überlastung (Overload) kommt, ab dem das Ergebnis nicht mehr optimal für die einzelne Person ist. Wir eignen uns zwar noch Wissen an, doch es kann Lücken aufweisen oder nicht zusammenhängend sein. Das wiederum führt zu mehr Aufwand beim Lernen, die Kosten steigen, auch weil Fehler häufiger auftreten.
 
-Die Cognitive Load-Theorie hilft dieses Phänomen zu verstehen und zu lindern.
+Die Cognitive Load-Theorie hilft, dieses Phänomen zu verstehen und zu lindern.
 
 == Die Cognitive Load-Theorie
 
@@ -123,11 +123,11 @@ Unser Gedächtnis teilt sich in drei Bereiche:
 . Arbeitsgedächtnis und
 . Langzeitgedächtnis.
 
-Die Unterteilung variiert in einzelnen Darstellungen, doch für jetzt kann sie als gutes Model für unser Gedächtnis dienen. Eine gute Zusammenfassung bietet hier https://pmc.ncbi.nlm.nih.gov/articles/PMC2657600/[What are the differences between long-term, short-term, and working memory?] von Nelson Cowanfootnote:[Cowan N. What are the differences between long-term, short-term, and working memory?. Prog Brain Res. 2008;169:323-338, https://pmc.ncbi.nlm.nih.gov/articles/PMC2657600/]
+Die Unterteilung variiert in einzelnen Darstellungen, doch für jetzt kann sie als gutes Modell für unser Gedächtnis dienen. Eine gute Zusammenfassung bietet hier https://pmc.ncbi.nlm.nih.gov/articles/PMC2657600/[What are the differences between long-term, short-term, and working memory?] von Nelson Cowanfootnote:[Cowan N. What are the differences between long-term, short-term, and working memory?. Prog Brain Res. 2008;169:323-338, https://pmc.ncbi.nlm.nih.gov/articles/PMC2657600/]
 
 Im Langzeitgedächtnis speichern wir Wissen in Form von Fakten und Erinnerungen an frühere Ereignisse. Hier liegt explizites und implizites Wissen vor, welches wir erworben haben.
 
-Davon grenzen sich Arbeitsgedächtnis und Kurzzeitgedächtnis durch eine wesentliche kürzere Verweildauer der Informationen in diesen Gedächtnisteilen ab. Das Kurzzeitgedächtnis hält genauso so viele Informationen für uns bereit, wie wir sie aktuell brauchen. Das Arbeitsgedächtnis ist davon nicht strikt abgetrennt, denn es behält Informationen für unsere aktuellen Handlungen vor und plant diese.
+Davon grenzen sich Arbeitsgedächtnis und Kurzzeitgedächtnis durch eine wesentlich kürzere Verweildauer der Informationen in diesen Gedächtnisteilen ab. Das Kurzzeitgedächtnis hält genauso viele Informationen für uns bereit, wie wir sie aktuell brauchen. Das Arbeitsgedächtnis ist davon nicht strikt abgetrennt, denn es behält Informationen für unsere aktuellen Handlungen vor und plant diese.
 
 In der Cognitive Load Theorie hat sich Sweller damit beschäftigt, was zu einem effektiven Lernen führt und wie dazu Lernmaterialien gestaltet werden müssen.
 Seine Arbeit beschäftigt sich dabei mit dem Erwerb von neuem Wissen. Dieses kann effektiv aufgenommen werden, wenn die Auslastung des Arbeitsgedächtnisses nicht so hoch wird, dass es zu einer Überlastung kommt. Diese kann vorkommen, wenn die Aufmerksamkeit beim Wissenserwerb sich über mehrere Quellen erstreckt und Wissen aus mehreren Quellen im Arbeitsgedächtnis integriert werden muss. Ist dem so, bezeichnet er dies als Split-Source-Effekt. Die Aufmerksamkeit muss sich teilen und später wieder integrieren.
@@ -144,11 +144,11 @@ Sweller unterscheidet ursprünglich in drei Teilarten von Cognitive Load: Intrin
 
 Dieses Modell ist sehr gut geeignet, um sich die Aufteilung vereinfacht vorstellen zu können.
 
-Später wurde diese Dreiteilung zu Gunsten einer Aufteilung auf Intrinsic Cognitive Load und Extrinsic Cognitive Load aufgegeben. Die Germane Cognitive Load wurde in die Intrinsic Cognitive Load integriert, vorallem, weil man sie nicht als eigene Größe zuverlässig messen konnte.
+Später wurde diese Dreiteilung zu Gunsten einer Aufteilung auf Intrinsic Cognitive Load und Extrinsic Cognitive Load aufgegeben. Die Germane Cognitive Load wurde in die Intrinsic Cognitive Load integriert, vor allem, weil man sie nicht als eigene Größe zuverlässig messen konnte.
 
-Ausschlaggebend für diese Neudefinition ist, dass alle Arten der Belastung beim Lernen im Arbeitsgedächtnis erfolgen, in dem wie oben erwähnt immer nur eine begrenzte Anzahl von Elementen gehalten werden kann, die miteinander interagieren können.
+Ausschlaggebend für diese Neudefinition ist, dass alle Arten der Belastung beim Lernen im Arbeitsgedächtnis erfolgen, in dem, wie oben erwähnt, immer nur eine begrenzte Anzahl von Elementen gehalten werden kann, die miteinander interagieren können.
 Um die drei Belastungsarten mit der gleichen Größe beschreiben zu können, wurde die Element Interactivity eingeführt.
-Diese beschreibt wie viele Elemente miteinander gleichzeitig für die Bearbeitung einer Belastungsart interagieren müssen.
+Diese beschreibt, wie viele Elemente miteinander gleichzeitig für die Bearbeitung einer Belastungsart interagieren müssen.
 
 
 ICL wird in dieser aktuelleren Aufteilung als die Zahl der Elemente, die gleichzeitig im Arbeitsgedächtnis gehalten werden müssen, definiert und unabhängig von der ECL, also der Darstellung und Aufbereitung ist. Die in die ICL integrierte Germane Cognitive Load ist der Teil des Arbeitsgedächtnisses, der für die Konstruktion von Denkmustern aufgewandt werden kann.
