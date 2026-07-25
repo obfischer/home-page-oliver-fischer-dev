@@ -101,15 +101,31 @@ Am nächsten Montag sind Sie dran, seine Arbeit zu übernehmen. Sie sind eingef�
 
 Vielleicht wirkt diese Geschichte überzeichnet, doch ist sie es nicht. Etwas Ähnliches habe ich erst kürzlich selber erlebt und es war nicht effektiv.
 
+// REVIEW (Kognitionswissenschaftler): Sehr treffendes Einstiegsbeispiel.
+// Das schnelle Springen zwischen Anwendungen erzeugt genau den Split-Attention-
+// Effekt und hohe Extraneous Load, die später erklärt werden. Ggf. am Ende
+// explizit auf dieses Beispiel zurückkommen ("Callback"), damit Leser die
+// Theorie direkt am Bild verankern können — verstärkt den Lerneffekt.
+
 == Was ist Cognitive Load und warum sollte man sich damit beschäftigen
 
 Cognitive Load drückt die Beanspruchung unseres Gehirns aus, die wir beim Lernen erfahren. Also, ob uns die Aneignung von Wissen leicht oder schwerfällt. Die Beanspruchung hängt dabei nicht alleine von der Aufgabe ab. Sie hängt auch von den Umständen ab, unter denen wir die Aufgabe lösen müssen.
+
+// REVIEW: Präziser wäre "Beanspruchung des Arbeitsgedächtnisses" statt "des
+// Gehirns". Cognitive Load ist im Kern eine Working-Memory-Theorie — das ist
+// die zentrale Ressource, um die es geht. Für IT-Publikum weiter unten ohnehin
+// eingeführt, aber gleich hier präziser zu sein schadet nicht.
 
 Dabei gibt es einen Punkt, an dem die Belastung so groß wird, dass es zu einer Überlastung (Overload) kommt, ab dem das Ergebnis nicht mehr optimal für die einzelne Person ist. Wir eignen uns zwar noch Wissen an, doch es kann Lücken aufweisen oder nicht zusammenhängend sein. Das wiederum führt zu mehr Aufwand beim Lernen, die Kosten steigen, auch weil Fehler häufiger auftreten.
 
 Die Cognitive Load-Theorie hilft, dieses Phänomen zu verstehen und zu lindern.
 
 == Die Cognitive Load-Theorie
+
+// REVIEW: Kleiner Tippfehler in der Fußnote — vor "Cognitive load" fehlt
+// das öffnende Anführungszeichen (nur schließendes vorhanden). Zudem fehlen
+// bei diesem Sweller-1988-Paper die üblichen Ko-Autoren nicht (er war
+// Alleinautor), aber Autor und Jahr wären als Angabe hilfreich.
 
 Die Cognitive Load-Theorie geht auf John Swellerfootnote:[https://en.wikipedia.org/wiki/John_Sweller]footnote:[https://www.unsw.edu.au/staff/john-sweller] zurück, zu der er 1988footnote:[Cognitive load during problem solving: Effects on learning', Cognitive Science, 12, pp. 257 - 285] die ersten Grundlagen legte.
 Als wesentliche Grundlage gilt seine Arbeit _Cognitive Load Theory and the Format of Instruction_footnote:[Chandler P; Sweller J, 1991, 'Cognitive Load Theory and the Format of Instruction', Cognition and Instruction, 8, pp. 293 - 332], später aktualisiert durch _Element Interactivity and Intrinsic, Extraneous, and Germane Cognitive Load_footnote:[Sweller, J. (2010). Element Interactivity and Intrinsic, Extraneous, and Germane Cognitive Load. Educational Psychology Review, 22(2), 123–138.].
@@ -125,12 +141,38 @@ Unser Gedächtnis teilt sich in drei Bereiche:
 
 Die Unterteilung variiert in einzelnen Darstellungen, doch für jetzt kann sie als gutes Modell für unser Gedächtnis dienen. Eine gute Zusammenfassung bietet hier https://pmc.ncbi.nlm.nih.gov/articles/PMC2657600/[What are the differences between long-term, short-term, and working memory?] von Nelson Cowanfootnote:[Cowan N. What are the differences between long-term, short-term, and working memory?. Prog Brain Res. 2008;169:323-338, https://pmc.ncbi.nlm.nih.gov/articles/PMC2657600/]
 
+// REVIEW: Wichtiger Hinweis — die scharfe Dreiteilung Kurzzeit-/Arbeits-/
+// Langzeitgedächtnis ist in der modernen Kognitionswissenschaft umstritten.
+// Cowan (zitiert) versteht das Arbeitsgedächtnis gerade als "aktivierte
+// Teilmenge" des Langzeitgedächtnisses, nicht als separaten Speicher.
+// Baddeley trennt Kurzzeit- und Arbeitsgedächtnis auch nicht klar.
+// Für IT-Publikum ist die Vereinfachung ok — aber ein Halbsatz wie "in der
+// Forschung sind die Grenzen fließend" wäre ehrlicher und deckt sich mit dem
+// bereits genannten "Die Unterteilung variiert".
+// Für CLT wesentlich ist ohnehin nur das ARBEITSGEDÄCHTNIS mit begrenzter
+// Kapazität — den Rest könnte man verkürzen.
+
 Im Langzeitgedächtnis speichern wir Wissen in Form von Fakten und Erinnerungen an frühere Ereignisse. Hier liegt explizites und implizites Wissen vor, welches wir erworben haben.
 
 Davon grenzen sich Arbeitsgedächtnis und Kurzzeitgedächtnis durch eine wesentlich kürzere Verweildauer der Informationen in diesen Gedächtnisteilen ab. Das Kurzzeitgedächtnis hält genauso viele Informationen für uns bereit, wie wir sie aktuell brauchen. Das Arbeitsgedächtnis ist davon nicht strikt abgetrennt, denn es behält Informationen für unsere aktuellen Handlungen vor und plant diese.
 
+// REVIEW: Sachlich unpräzise: "hält so viele Informationen bereit, wie wir
+// brauchen" — das stimmt nicht. Die Kapazität ist HARTE Grenze, nicht
+// bedarfsgesteuert. Miller (1956): 7±2 Chunks; Cowan (2001): eher 4±1.
+// Genau diese ENGE Kapazität ist der Grund, warum CLT überhaupt existiert.
+// Das ist eine der wichtigsten Kernbotschaften und sollte hier klar stehen —
+// gerade für IT-Leser eine einprägsame, quantifizierbare Zahl (bekannt aus
+// "The Magical Number Seven"). Vorschlag zum Ergänzen: "Nur ~4 Elemente
+// gleichzeitig aktiv verarbeitbar."
+
 In der Cognitive Load Theorie hat sich Sweller damit beschäftigt, was zu einem effektiven Lernen führt und wie dazu Lernmaterialien gestaltet werden müssen.
 Seine Arbeit beschäftigt sich dabei mit dem Erwerb von neuem Wissen. Dieses kann effektiv aufgenommen werden, wenn die Auslastung des Arbeitsgedächtnisses nicht so hoch wird, dass es zu einer Überlastung kommt. Diese kann vorkommen, wenn die Aufmerksamkeit beim Wissenserwerb sich über mehrere Quellen erstreckt und Wissen aus mehreren Quellen im Arbeitsgedächtnis integriert werden muss. Ist dem so, bezeichnet er dies als Split-Source-Effekt. Die Aufmerksamkeit muss sich teilen und später wieder integrieren.
+
+// REVIEW: Der geläufigere Begriff ist "Split-Attention-Effect" (nicht
+// Split-Source). "Split-source" gibt es in der Literatur seltener. Ggf.
+// prüfen und ggf. beide Begriffe nennen. Der Effekt ist eines der
+// meistzitierten Beispiele der CLT — hier bietet sich ein IT-Beispiel an
+// (z.B.: Code auf einem Screen, API-Doku im Browser-Tab, Ticket in Jira).
 
 Wichtig hierbei ist zu verstehen, dass Cognitive Load nicht per se schlecht ist. Vielmehr kann sie als Auslastung begriffen werden, die erst bei der Überschreitung einer Grenze zu einer Belastung wird. Bildlich entspricht das dem eines Motors, der in seinem vorgesehenen Betriebsbereich wunderbar funktioniert, aber beim Überschreiten einer Leistungsgrenze in den roten Bereich gerät.
 
@@ -140,18 +182,122 @@ Sweller unterscheidet ursprünglich in drei Teilarten von Cognitive Load: Intrin
 
 *Extraneous Cognitive Load* (extrinsische kognitive Belastung) ist die Belastung, die nichts mit dem Thema selber zu tun hat, sondern sich aus den Lernumständen wie dem Lernmaterial selber und dessen Aufbereitung ergibt.
 
+// REVIEW: Begriffliche Ungenauigkeit: "extraneous" ≠ "extrinsisch".
+// "Extraneous" = sachfremd/überflüssig/unnötig. "Extrinsisch" ist die
+// Übersetzung von "extrinsic" (von außen kommend) und hat in der
+// Motivationspsychologie eine andere Bedeutung. Besser: "sachfremde
+// kognitive Belastung" oder einfach den englischen Begriff behalten.
+
 *Germane cognitive load* (lernbezogene kognitive Belastung) ist der Denkaufwand, der beim Wissenserwerb aktiv durch den Lernenden zur Konstruktion von Denkmustern aufgewandt wird.
+
+// REVIEW: "Denkmuster" ist umgangssprachlich ok, der etablierte Fachbegriff
+// in der CLT-Literatur ist "Schema" (Plural: Schemata) — bezeichnet
+// automatisierte Wissensstrukturen im Langzeitgedächtnis, die den WM-Load
+// reduzieren, indem sie mehrere Einzelelemente zu einem Chunk bündeln.
+// Diese Schema-Bildung ist der ganze Sinn von Germane Load — dieser
+// Zusammenhang zum Chunk-Konzept fehlt hier und wäre lohnenswert.
 
 Dieses Modell ist sehr gut geeignet, um sich die Aufteilung vereinfacht vorstellen zu können.
 
 Später wurde diese Dreiteilung zu Gunsten einer Aufteilung auf Intrinsic Cognitive Load und Extrinsic Cognitive Load aufgegeben. Die Germane Cognitive Load wurde in die Intrinsic Cognitive Load integriert, vor allem, weil man sie nicht als eigene Größe zuverlässig messen konnte.
 
+// REVIEW: Ein paar Präzisierungen:
+// 1) Hier wieder "Extrinsic" — Sweller selbst verwendet konsequent
+//    "Extraneous". Bitte einheitlich verwenden.
+// 2) "aufgegeben" ist zu stark — die Dreiteilung wird in der Praxis
+//    weiterhin breit gelehrt und verwendet. Sweller (2010) hat sie
+//    theoretisch neu eingeordnet, nicht "verworfen". Germane Load wird
+//    heute eher als der Anteil von WM-Ressourcen verstanden, der der
+//    Verarbeitung intrinsischer Elemente (Schema-Bildung) gewidmet
+//    wird — also nicht "in ICL integriert", sondern als Ressource für
+//    ICL-Verarbeitung.
+// 3) Der Messbarkeitsgrund ist richtig — sauber erklärt.
+
 Ausschlaggebend für diese Neudefinition ist, dass alle Arten der Belastung beim Lernen im Arbeitsgedächtnis erfolgen, in dem, wie oben erwähnt, immer nur eine begrenzte Anzahl von Elementen gehalten werden kann, die miteinander interagieren können.
 Um die drei Belastungsarten mit der gleichen Größe beschreiben zu können, wurde die Element Interactivity eingeführt.
 Diese beschreibt, wie viele Elemente miteinander gleichzeitig für die Bearbeitung einer Belastungsart interagieren müssen.
 
+// REVIEW: Element Interactivity wurde nicht neu "eingeführt", um die
+// Belastungsarten zu vereinheitlichen — der Begriff existierte in der CLT
+// von Anfang an. Neu ist, dass alle Load-Arten damit auf DERSELBEN Achse
+// (Element-Interaktion im WM) gemessen werden. Wichtiger Aspekt:
+// Element-Interaktivität ist relativ zum VORWISSEN. Was für einen
+// Anfänger 10 interagierende Elemente sind, ist für den Experten dank
+// Schemata 1 Chunk. Diese Relativität ist DER Hebel für IT-Onboarding
+// und fehlt hier bisher.
 
 ICL wird in dieser aktuelleren Aufteilung als die Zahl der Elemente, die gleichzeitig im Arbeitsgedächtnis gehalten werden müssen, definiert und unabhängig von der ECL, also der Darstellung und Aufbereitung ist. Die in die ICL integrierte Germane Cognitive Load ist der Teil des Arbeitsgedächtnisses, der für die Konstruktion von Denkmustern aufgewandt werden kann.
+
+// REVIEW: "Zahl der Elemente" ist verkürzt — entscheidend ist ihre
+// INTERAKTION untereinander (element interactivity). 10 unabhängige
+// Fakten sind niedrige ICL, 4 stark interagierende Konzepte hohe.
+// Beispiel für IT: eine Liste HTTP-Statuscodes lernen (niedrige ICL,
+// isoliert) vs. Race Condition zwischen 3 Threads verstehen (hohe ICL,
+// alles muss gleichzeitig gedacht werden).
+
+// ─────────────────────────────────────────────────────────────────
+// GESAMTBEWERTUNG (Kognitionswissenschaftler)
+// ─────────────────────────────────────────────────────────────────
+// STÄRKEN
+// + Sehr guter narrativer Einstieg mit alltagsnahem Beispiel.
+// + Motor-Analogie für "Load ≠ Overload" ist einprägsam und korrekt.
+// + Historische Einordnung mit Quellen ist solide.
+// + Cowan-Referenz zum Gedächtnis ist gut gewählt.
+//
+// SCHWÄCHEN / TODOS
+// - Der Titel verspricht "wie wir sie reduzieren" — der zweite Teil
+//   fehlt komplett. Bitte konkrete Strategien ergänzen: Worked
+//   Examples, Split-Attention vermeiden, Modality-Effect, Chunking,
+//   Scaffolding, Redundanz-Effekt, Expertise-Reversal.
+// - Bezug zur IT-Zielgruppe fehlt weitgehend. Beispiele einbauen:
+//   Code-Reviews, Dokumentation, Onboarding, Pairing, IDE-Setup,
+//   API-Design, Naming, Abstraktionsebenen. Vgl. Buch "Programmer's
+//   Brain" von Felienne Hermans — sehr passend als Referenz.
+// - Wiederkehrende terminologische Unschärfen (extrinsic vs.
+//   extraneous, Denkmuster vs. Schema, Kapazität des KZG).
+// - Rückbezug zum Eingangsbeispiel würde die Übergabesituation
+//   konkret analysierbar machen (welche Load-Arten wirken dort?).
+//
+// TON & STIL
+// Für IT-Publikum angemessen — nicht zu akademisch, nicht zu flach.
+// Länge des Theorie-Teils ist grenzwertig; ohne Praxis-Teil wirkt
+// er wie ein Wikipedia-Auszug. Die Balance kippt in Ordnung, sobald
+// der Anwendungsteil dazukommt.
+
+////
+─────────────────────────────────────────────────────────────────
+ZUSAMMENFASSUNG DER REVIEW (Kognitionswissenschaftler)
+─────────────────────────────────────────────────────────────────
+
+Insgesamt 10 Review-Kommentare als AsciiDoc-Kommentare eingefügt —
+der bestehende Text ist unverändert.
+
+WESENTLICHE FACHLICHE PUNKTE
+- Kapazität des Kurzzeitgedächtnisses: Die Aussage "hält so viele
+  Informationen bereit, wie wir brauchen" ist falsch — harte Grenze
+  (Miller 7±2, Cowan 4±1). Diese Zahl ist zentral für CLT.
+- Extraneous ≠ extrinsisch: Übersetzungsfehler, sollte "sachfremd"
+  oder englisch belassen werden.
+- Schema statt Denkmuster: etablierter Fachbegriff der CLT-Literatur.
+- Split-Source vs. Split-Attention: Letzterer ist in der Literatur
+  geläufiger.
+- Gedächtnis-Dreiteilung: stark umstritten, Cowan (wird zitiert!)
+  vertritt gerade das Gegenteil.
+- "Dreiteilung aufgegeben": zu stark formuliert — sie wird weiter
+  genutzt, wurde nur theoretisch neu eingeordnet.
+- Element Interactivity: ist Kernkonzept von Anfang an, nicht später
+  hinzugefügt; entscheidend ist Interaktion, nicht Anzahl.
+
+STRUKTURELLER HAUPTPUNKT
+Der Titel verspricht "wie wir sie reduzieren" — dieser Teil fehlt
+komplett. Praxisbezug zur IT-Zielgruppe (Code-Reviews, Onboarding,
+Dokumentation) fehlt bisher; Referenz auf "The Programmer's Brain"
+von Felienne Hermans wäre passend.
+
+KLEINES DETAIL
+Öffnendes Anführungszeichen in der Fußnote zum Sweller-1988-Paper
+fehlt.
+////
 
 
 
