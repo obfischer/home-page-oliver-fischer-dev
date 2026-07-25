@@ -109,7 +109,7 @@ Vielleicht wirkt diese Geschichte überzeichnet, doch ist sie es nicht. Etwas Ä
 
 == Was ist Cognitive Load und warum sollte man sich damit beschäftigen
 
-Cognitive Load drückt die Beanspruchung unseres Gehirns aus, die wir beim Lernen erfahren. Also, ob uns die Aneignung von Wissen leicht oder schwerfällt. Die Beanspruchung hängt dabei nicht alleine von der Aufgabe ab. Sie hängt auch von den Umständen ab, unter denen wir die Aufgabe lösen müssen.
+Cognitive Load drückt die Beanspruchung unseres Arbeitsgedächtnisses aus, die wir beim Lernen erfahren. Also, ob uns die Aneignung von Wissen leicht oder schwerfällt. Die Beanspruchung hängt dabei nicht alleine von der Aufgabe ab. Sie hängt auch von den Umständen ab, unter denen wir die Aufgabe lösen müssen.
 
 // REVIEW: Präziser wäre "Beanspruchung des Arbeitsgedächtnisses" statt "des
 // Gehirns". Cognitive Load ist im Kern eine Working-Memory-Theorie — das ist
@@ -127,7 +127,7 @@ Die Cognitive Load-Theorie hilft, dieses Phänomen zu verstehen und zu lindern.
 // bei diesem Sweller-1988-Paper die üblichen Ko-Autoren nicht (er war
 // Alleinautor), aber Autor und Jahr wären als Angabe hilfreich.
 
-Die Cognitive Load-Theorie geht auf John Swellerfootnote:[https://en.wikipedia.org/wiki/John_Sweller]footnote:[https://www.unsw.edu.au/staff/john-sweller] zurück, zu der er 1988footnote:[Cognitive load during problem solving: Effects on learning', Cognitive Science, 12, pp. 257 - 285] die ersten Grundlagen legte.
+Die Cognitive Load-Theorie geht auf John Swellerfootnote:[https://en.wikipedia.org/wiki/John_Sweller]footnote:[https://www.unsw.edu.au/staff/john-sweller] zurück, zu der er 1988footnote:'[Cognitive load during problem solving: Effects on learning', Cognitive Science, 12, pp. 257 - 285] die ersten Grundlagen legte.
 Als wesentliche Grundlage gilt seine Arbeit _Cognitive Load Theory and the Format of Instruction_footnote:[Chandler P; Sweller J, 1991, 'Cognitive Load Theory and the Format of Instruction', Cognition and Instruction, 8, pp. 293 - 332], später aktualisiert durch _Element Interactivity and Intrinsic, Extraneous, and Germane Cognitive Load_footnote:[Sweller, J. (2010). Element Interactivity and Intrinsic, Extraneous, and Germane Cognitive Load. Educational Psychology Review, 22(2), 123–138.].
 
 Doch ehe wir in die Details gehen, sollten wir uns ansehen, wie unser Gehirn beim Lernen arbeitet.
@@ -139,7 +139,7 @@ Unser Gedächtnis teilt sich in drei Bereiche:
 . Arbeitsgedächtnis und
 . Langzeitgedächtnis.
 
-Die Unterteilung variiert in einzelnen Darstellungen, doch für jetzt kann sie als gutes Modell für unser Gedächtnis dienen. Eine gute Zusammenfassung bietet hier https://pmc.ncbi.nlm.nih.gov/articles/PMC2657600/[What are the differences between long-term, short-term, and working memory?] von Nelson Cowanfootnote:[Cowan N. What are the differences between long-term, short-term, and working memory?. Prog Brain Res. 2008;169:323-338, https://pmc.ncbi.nlm.nih.gov/articles/PMC2657600/]
+Die Unterteilung variiert in einzelnen Darstellungen in der Forschung, doch für uns an dieser Stelle kann sie als gutes Modell für unser Gedächtnis dienen. Eine gute Zusammenfassung bietet hier https://pmc.ncbi.nlm.nih.gov/articles/PMC2657600/[What are the differences between long-term, short-term, and working memory?] von Nelson Cowanfootnote:[Cowan N. What are the differences between long-term, short-term, and working memory?. Prog Brain Res. 2008;169:323-338, https://pmc.ncbi.nlm.nih.gov/articles/PMC2657600/]
 
 // REVIEW: Wichtiger Hinweis — die scharfe Dreiteilung Kurzzeit-/Arbeits-/
 // Langzeitgedächtnis ist in der modernen Kognitionswissenschaft umstritten.
@@ -152,9 +152,13 @@ Die Unterteilung variiert in einzelnen Darstellungen, doch für jetzt kann sie a
 // Für CLT wesentlich ist ohnehin nur das ARBEITSGEDÄCHTNIS mit begrenzter
 // Kapazität — den Rest könnte man verkürzen.
 
-Im Langzeitgedächtnis speichern wir Wissen in Form von Fakten und Erinnerungen an frühere Ereignisse. Hier liegt explizites und implizites Wissen vor, welches wir erworben haben.
+Im Langzeitgedächtnis speichern wir Wissen in Form von Fakten und Erinnerungen an frühere Ereignisse. Hier liegt explizites und implizites Wissen vor, welches wir erworben haben. Es nimmt den überwiegenden Teil unserer Gedächtnisleistung ein.
 
-Davon grenzen sich Arbeitsgedächtnis und Kurzzeitgedächtnis durch eine wesentlich kürzere Verweildauer der Informationen in diesen Gedächtnisteilen ab. Das Kurzzeitgedächtnis hält genauso viele Informationen für uns bereit, wie wir sie aktuell brauchen. Das Arbeitsgedächtnis ist davon nicht strikt abgetrennt, denn es behält Informationen für unsere aktuellen Handlungen vor und plant diese.
+Davon grenzen sich Arbeitsgedächtnis und Kurzzeitgedächtnis durch eine wesentlich kürzere Verweildauer und Anzahl  der Informationen in diesen Gedächtnisteilen ab. Das Kurzzeitgedächtnis hält genauso die Informationen für uns bereit, wie wir sie aktuell brauchen. Doch seine Kapazität ist wesentlich kleiner, als die des Langzeitgedächtnisses.
+In der Forschung wird von ungefähr Elementen ausgegangen, die uns gleichzeitig zur Verfügung stehen.
+Wichtig für das Verständnis und die Konsequenzen der Cognitive Load Theorie ist, dass ein Element für jeden etwas anderes sein kann. Für jemanden, der sich zum ersten Mal mit Kubernetes beschäftigt, sind Image, Control Plane, Container separate Elemente und die Anzahl der relevanten Elemente zum Verständnis von Kubernetes übersteigen die Kapazität des Arbeitsgedächtnisses. Mit zunehmendem Lernfortschritt reduziert sich die Anzahl der Elemente. Zuerst verschmelzen Image und Container und am Ende nimmt das Konzept von Kubernetes die Platz eines einzelnen Elements dar. Es ist ein Expertenniveau erreicht worden, auf dem Kubernetes so gut verstanden wurde, dass es reicht es als einzelnen Element zu behandeln.
+Wie ein Thema im Arbeitsgedächtnis representiert werden kann hängt also vom Vorwissen und dem Lernfortschritt ab.
+Das Arbeitsgedächtnis ist von Kurzzeitgedächtnis nicht strikt abgetrennt, denn es behält Informationen für unsere aktuellen Handlungen vor und plant diese.
 
 // REVIEW: Sachlich unpräzise: "hält so viele Informationen bereit, wie wir
 // brauchen" — das stimmt nicht. Die Kapazität ist HARTE Grenze, nicht
@@ -166,7 +170,7 @@ Davon grenzen sich Arbeitsgedächtnis und Kurzzeitgedächtnis durch eine wesentl
 // gleichzeitig aktiv verarbeitbar."
 
 In der Cognitive Load Theorie hat sich Sweller damit beschäftigt, was zu einem effektiven Lernen führt und wie dazu Lernmaterialien gestaltet werden müssen.
-Seine Arbeit beschäftigt sich dabei mit dem Erwerb von neuem Wissen. Dieses kann effektiv aufgenommen werden, wenn die Auslastung des Arbeitsgedächtnisses nicht so hoch wird, dass es zu einer Überlastung kommt. Diese kann vorkommen, wenn die Aufmerksamkeit beim Wissenserwerb sich über mehrere Quellen erstreckt und Wissen aus mehreren Quellen im Arbeitsgedächtnis integriert werden muss. Ist dem so, bezeichnet er dies als Split-Source-Effekt. Die Aufmerksamkeit muss sich teilen und später wieder integrieren.
+Seine Arbeit beschäftigt sich dabei mit dem Erwerb von neuem Wissen. Dieses kann effektiv aufgenommen werden, wenn die Auslastung des Arbeitsgedächtnisses nicht so hoch wird, dass es zu einer Überlastung kommt. Diese kann vorkommen, wenn die Aufmerksamkeit beim Wissenserwerb sich über mehrere Quellen erstreckt und Wissen aus mehreren Quellen im Arbeitsgedächtnis integriert werden muss. Ist dem so, bezeichnet er dies als Split-Source-Effekt. Die Aufmerksamkeit muss sich teilen und später wieder integrieren. Dieses Phänomen wird als Split-Attention-Effect bezeichnet.
 
 // REVIEW: Der geläufigere Begriff ist "Split-Attention-Effect" (nicht
 // Split-Source). "Split-source" gibt es in der Literatur seltener. Ggf.
@@ -180,7 +184,7 @@ Sweller unterscheidet ursprünglich in drei Teilarten von Cognitive Load: Intrin
 
 *Intrinsic Cognitive Load* (intrinsische kognitive Belastung) ist die Belastung durch das sich anzueignende Thema selber. Sie hängt vom Vorwissen und der Aufgabenstellung ab und kann ohne Änderung dieser beiden Faktoren nicht beeinflusst werden.
 
-*Extraneous Cognitive Load* (extrinsische kognitive Belastung) ist die Belastung, die nichts mit dem Thema selber zu tun hat, sondern sich aus den Lernumständen wie dem Lernmaterial selber und dessen Aufbereitung ergibt.
+*Extraneous Cognitive Load* (sachfremde kognitive Belastung) ist die Belastung, die nichts mit dem Thema selber zu tun hat, sondern sich aus den Lernumständen wie dem Lernmaterial selber und dessen Aufbereitung ergibt.
 
 // REVIEW: Begriffliche Ungenauigkeit: "extraneous" ≠ "extrinsisch".
 // "Extraneous" = sachfremd/überflüssig/unnötig. "Extrinsisch" ist die
@@ -188,7 +192,7 @@ Sweller unterscheidet ursprünglich in drei Teilarten von Cognitive Load: Intrin
 // Motivationspsychologie eine andere Bedeutung. Besser: "sachfremde
 // kognitive Belastung" oder einfach den englischen Begriff behalten.
 
-*Germane cognitive load* (lernbezogene kognitive Belastung) ist der Denkaufwand, der beim Wissenserwerb aktiv durch den Lernenden zur Konstruktion von Denkmustern aufgewandt wird.
+*Germane cognitive load* (lernbezogene kognitive Belastung) ist der Denkaufwand, der beim Wissenserwerb aktiv durch den Lernenden zur Konstruktion von Denkmustern aufgewandt wird, die dann als Elemente in Form eines Schemas im Langzeitgedächtnis abgelegt werden.
 
 // REVIEW: "Denkmuster" ist umgangssprachlich ok, der etablierte Fachbegriff
 // in der CLT-Literatur ist "Schema" (Plural: Schemata) — bezeichnet
@@ -199,7 +203,8 @@ Sweller unterscheidet ursprünglich in drei Teilarten von Cognitive Load: Intrin
 
 Dieses Modell ist sehr gut geeignet, um sich die Aufteilung vereinfacht vorstellen zu können.
 
-Später wurde diese Dreiteilung zu Gunsten einer Aufteilung auf Intrinsic Cognitive Load und Extrinsic Cognitive Load aufgegeben. Die Germane Cognitive Load wurde in die Intrinsic Cognitive Load integriert, vor allem, weil man sie nicht als eigene Größe zuverlässig messen konnte.
+Später wurde diese Dreiteilung zu Gunsten einer Aufteilung auf Intrinsic Cognitive Load und Extraneous Cognitive Load überarbeitet.
+Die Germane Cognitive Load wurde in die Intrinsic Cognitive Load integriert, vor allem, weil man sie nicht als eigene Größe zuverlässig messen konnte, und wird jetzt als der Anteil des Arbeitsgedächtnisses verstanden, der zur Schemabildung für den Wissenserwerb aufgewendet wird.
 
 // REVIEW: Ein paar Präzisierungen:
 // 1) Hier wieder "Extrinsic" — Sweller selbst verwendet konsequent
@@ -214,8 +219,8 @@ Später wurde diese Dreiteilung zu Gunsten einer Aufteilung auf Intrinsic Cognit
 // 3) Der Messbarkeitsgrund ist richtig — sauber erklärt.
 
 Ausschlaggebend für diese Neudefinition ist, dass alle Arten der Belastung beim Lernen im Arbeitsgedächtnis erfolgen, in dem, wie oben erwähnt, immer nur eine begrenzte Anzahl von Elementen gehalten werden kann, die miteinander interagieren können.
-Um die drei Belastungsarten mit der gleichen Größe beschreiben zu können, wurde die Element Interactivity eingeführt.
-Diese beschreibt, wie viele Elemente miteinander gleichzeitig für die Bearbeitung einer Belastungsart interagieren müssen.
+Um die drei Belastungsarten mit der gleichen Größe beschreiben zu können, wird Element Interactivity genutzt.
+Diese beschreibt, wie viele Elemente miteinander gleichzeitig für die Bearbeitung einer Belastungsart interagieren müssen. Vorteil ist, dass dank der gleichen Messgröße alle Load-Arten auf einer Achse liegen.
 
 // REVIEW: Element Interactivity wurde nicht neu "eingeführt", um die
 // Belastungsarten zu vereinheitlichen — der Begriff existierte in der CLT
@@ -226,7 +231,7 @@ Diese beschreibt, wie viele Elemente miteinander gleichzeitig für die Bearbeitu
 // Schemata 1 Chunk. Diese Relativität ist DER Hebel für IT-Onboarding
 // und fehlt hier bisher.
 
-ICL wird in dieser aktuelleren Aufteilung als die Zahl der Elemente, die gleichzeitig im Arbeitsgedächtnis gehalten werden müssen, definiert und unabhängig von der ECL, also der Darstellung und Aufbereitung ist. Die in die ICL integrierte Germane Cognitive Load ist der Teil des Arbeitsgedächtnisses, der für die Konstruktion von Denkmustern aufgewandt werden kann.
+ICL wird in dieser aktuelleren Aufteilung als die Zahl der Elemente, die gleichzeitig im Arbeitsgedächtnis gehalten werden müssen und miteinander verknüpft sind, definiert und unabhängig von der ECL, also der Darstellung und Aufbereitung ist. Die Liste der HTTP-Status-Codes zu lernen würde eine geringere ICL hervorrufen als eine Race-Kondition in einem verteilten System. Beim ersteren Beispiel kann jedes Element einzeln betrachtet werden, beim zweiteren müssen alle Elemente miteinander verknüpft werden, um die Aufgabe zu bewältigen. Die in die ICL integrierte Germane Cognitive Load ist der Teil des Arbeitsgedächtnisses, der für die Konstruktion von Denkmustern aufgewandt werden kann.
 
 // REVIEW: "Zahl der Elemente" ist verkürzt — entscheidend ist ihre
 // INTERAKTION untereinander (element interactivity). 10 unabhängige
