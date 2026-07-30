@@ -99,7 +99,7 @@ schema:
 Vielleicht kennen Sie diese Situation. Jemand bittet Sie, die Arbeit von einem Kollegen zu übernehmen, der verlässt die Firma und es müsse noch eine Übernahme gemacht werden. Alle sind beschäftigt und die Übernahme findet am vorletzten Tag statt. Sie setzen sich mit dem Kollegen zusammen, in Persona oder virtuell, denn er solle Ihnen seine Arbeit zeigen. Ein Termin solle ja dafür reichen. Er beginnt mit seiner Arbeit, fließend und schnell, springt zwischen Anwendungen hin und her, erklärt in eigenen Worten, was er macht, Sie fragen nach. Der Termin ist zu Ende.
 Am nächsten Montag sind Sie dran, seine Arbeit zu übernehmen. Sie sind eingeführt worden. Doch wie viel haben Sie gelernt und können es fortführen?
 
-Vielleicht wirkt diese Geschichte überzeichnet, doch ist sie es nicht. Etwas Ähnliches habe ich erst kürzlich selber erlebt und es war nicht effektiv.
+Vielleicht wirkt diese Geschichte überzeichnet, doch ist sie es nicht. Etwas Ähnliches habe ich erst kürzlich selber erlebt und es war nicht effektiv. Und wer kennt sie nicht: User Interfaces, die einem mehr Rätsel aufgeben und damit zu unsicheren Entscheidungen und Fehlern führen.
 
 // REVIEW (Kognitionswissenschaftler): Sehr treffendes Einstiegsbeispiel.
 // Das schnelle Springen zwischen Anwendungen erzeugt genau den Split-Attention-
@@ -231,7 +231,7 @@ Diese beschreibt, wie viele Elemente miteinander gleichzeitig für die Bearbeitu
 // Schemata 1 Chunk. Diese Relativität ist DER Hebel für IT-Onboarding
 // und fehlt hier bisher.
 
-ICL wird in dieser aktuelleren Aufteilung als die Zahl der Elemente, die gleichzeitig im Arbeitsgedächtnis gehalten werden müssen und miteinander verknüpft sind, definiert und unabhängig von der ECL, also der Darstellung und Aufbereitung ist. Die Liste der HTTP-Status-Codes zu lernen würde eine geringere ICL hervorrufen als eine Race-Kondition in einem verteilten System. Beim ersteren Beispiel kann jedes Element einzeln betrachtet werden, beim zweiteren müssen alle Elemente miteinander verknüpft werden, um die Aufgabe zu bewältigen. Die in die ICL integrierte Germane Cognitive Load ist der Teil des Arbeitsgedächtnisses, der für die Konstruktion von Denkmustern aufgewandt werden kann.
+ICL wird in dieser aktuelleren Aufteilung als die Zahl der Elemente, die gleichzeitig im Arbeitsgedächtnis gehalten werden müssen und miteinander verknüpft sind, definiert und unabhängig von der ECL, also der Darstellung und Aufbereitung ist. Die Liste der HTTP-Status-Codes zu lernen würde eine geringere ICL hervorrufen als eine Race-Kondition in einem verteilten System. Beim ersteren  Beispiel kann jedes Element einzeln betrachtet werden, beim zweiteren müssen alle Elemente miteinander verknüpft werden, um die Aufgabe zu bewältigen. Die in die ICL integrierte Germane Cognitive Load ist der Teil des Arbeitsgedächtnisses, der für die Konstruktion von Denkmustern aufgewandt werden kann.
 
 // REVIEW: "Zahl der Elemente" ist verkürzt — entscheidend ist ihre
 // INTERAKTION untereinander (element interactivity). 10 unabhängige
@@ -304,6 +304,258 @@ KLEINES DETAIL
 fehlt.
 ////
 
+== Verteilungsbeispiel für Cognitive Load
+
+Die erste Abbildung zeigt eine mögliche Verteilung der Element Interactivity für eine Aufgabe aus einem komplizierten neuen Bereich, dessen Darstellung und Aufbereitung nicht gut sind.
+Die Person muss sich zum einen m in ein kompliziertes Thema einarbeiten und auch mit der Darstellung kämpfen.
+
+++++
+<style>
+.clt {
+    display:grid;
+    max-width:100%;
+    column-gap:4px;
+    padding-bottom: 1em;
+    row-gap:2px;
+    grid-template-columns:40fr 10fr 50fr;
+    grid-template-areas:"lbl . ." "brk  brk ." "il gl el" "cap cap  cap" "cpl cpl cpl";
+}
+
+.clt>.lbl{
+    grid-area:lbl;
+    text-align:center;
+    font-size:13px;
+    color:#555;
+    padding-bottom:2px}
+
+.clt>.brk {grid-area:brk;height:8px;border:1px solid #000;border-bottom:none;border-radius:6px 6px 0 0}
+
+.clt>.seg{height:66px;border:1px solid #333;border-radius:4px;display:flex;flex-direction:column;
+
+align-items:center;justify-content:center;font-size:13px;line-height:1.35;color:#242424;text-align:center;padding:0 4px}
+
+.clt>.seg b{font-weight:500}
+.clt>.il{grid-area:il;background:#e8b4b4}
+.clt>.gl{grid-area:gl;background:#d4d4e8}
+
+.clt>.el{grid-area:el;background:#e8d4b4}
+.clt>.cap{grid-area:cap;height:8px;border:1px solid #777;border-top:none;border-radius:0 0 6px 6px;margin-top:2px}
+
+.clt>.cpl{grid-area:cpl;text-align:center;font-size:13px;color:#555;padding-top:2px}
+</style>
+<div class="clt">
+<div class="lbl">essenzielle Last</div>
+<div class="brk"></div>
+<div class="seg il"><b>Intrinsic</b><span>Load 40%</span></div>
+<div class="seg gl"><b>Germane</b><span>Load 10%</span></div>
+
+<div class="seg el"><b>Extraneous</b><span>Load 50%</span></div>
+<div class="cap"></div>
+<div class="cpl">Gesamtkapazität des Arbeitsgedächtnis</div>
+</div>
+++++
+
+In diesem Beispiel stehen nur 10 Prozent für das eigentliche Lernen und die Schemabildung übrig. Dementsprechend fällt der Lernerfolg schlecht aus.
+
+Angenommen die Intrinsic Load ist unveränderlich, dann kann für die Germane Load nur mehr Kapazität geschaffen werden, wenn die Extraneous Load reduziert wird. Da diese durch die Aufbereitung von Darstellung des bereitgestellten Materials bestimmt wird, muss dieses verbessert werden. Gelingt das, könnte sich die Nutzung des Arbeitsgedächtnisses wie folgend gestalten.
+
+++++
+<style>
+.clt2 {
+    display:grid;
+    max-width:100%;
+    column-gap:4px;
+    row-gap:2px;
+    padding-bottom: 1em;
+    grid-template-columns:40fr 30fr 30fr;
+    grid-template-areas:"lbl . ." "brk  brk ." "il gl el" "cap cap  cap" "cpl cpl cpl";
+}
+
+.clt2>.lbl{
+    grid-area:lbl;
+    text-align:center;
+    font-size:13px;
+    color:#555;
+    padding-bottom:2px}
+
+.clt2>.brk {grid-area:brk;height:8px;border:1px solid #000;border-bottom:none;border-radius:6px 6px 0 0}
+
+.clt2>.seg{height:66px;border:1px solid #333;border-radius:4px;display:flex;flex-direction:column;
+
+align-items:center;justify-content:center;font-size:13px;line-height:1.35;color:#242424;text-align:center;padding:0 4px}
+
+.clt2>.seg b{font-weight:500}
+.clt2>.il{grid-area:il;background:#e8b4b4}
+.clt2>.gl{grid-area:gl;background:#d4d4e8}
+
+.clt2>.el{grid-area:el;background:#e8d4b4}
+.clt2>.cap{grid-area:cap;height:8px;border:1px solid #777;border-top:none;border-radius:0 0 6px 6px;margin-top:2px}
+
+.clt2>.cpl{grid-area:cpl;text-align:center;font-size:13px;color:#555;padding-top:2px}
+</style>
+<div class="clt2">
+<div class="lbl">essenzielle Last</div>
+<div class="brk"></div>
+<div class="seg il"><b>Intrinsic</b><span>Load 40%</span></div>
+<div class="seg gl"><b>Germane</b><span>Load 30%</span></div>
+
+<div class="seg el"><b>Extraneous</b><span>Load 30%</span></div>
+<div class="cap"></div>
+<div class="cpl">Gesamtkapazität des Arbeitsgedächtnis</div>
+</div>
+++++
+
+So umgestaltet stehen jetzt 30 Prozent für die Germane Load zur Verfügung. Ganze 20 Prozent mehr.
+
+Wenn jetzt noch die Intrinsic Load reduziert werden kann, kann noch mehr Kapazität für die Germane Load geschaffen werden.
+
+++++
+<style>
+.clt3 {
+    display:grid;
+    max-width:100%;
+    column-gap:4px;
+    row-gap:2px;
+    padding-bottom: 1em;
+    grid-template-columns:20fr 60fr 20fr;
+    grid-template-areas:"lbl . ." "brk  brk ." "il gl el" "cap cap  cap" "cpl cpl cpl";
+}
+
+.clt3>.lbl{
+    grid-area:lbl;
+    text-align:center;
+    font-size:13px;
+    color:#555;
+    padding-bottom:2px}
+
+.clt3>.brk {grid-area:brk;height:8px;border:1px solid #000;border-bottom:none;border-radius:6px 6px 0 0}
+
+.clt3>.seg{height:66px;border:1px solid #333;border-radius:4px;display:flex;flex-direction:column;
+
+align-items:center;justify-content:center;font-size:13px;line-height:1.35;color:#242424;text-align:center;padding:0 4px}
+
+.clt3>.seg b{font-weight:500}
+.clt3>.il{grid-area:il;background:#e8b4b4}
+.clt3>.gl{grid-area:gl;background:#d4d4e8}
+
+.clt3>.el{grid-area:el;background:#e8d4b4}
+.clt3>.cap{grid-area:cap;height:8px;border:1px solid #777;border-top:none;border-radius:0 0 6px 6px;margin-top:2px}
+
+.clt3>.cpl{grid-area:cpl;text-align:center;font-size:13px;color:#555;padding-top:2px}
+</style>
+<div class="clt3">
+<div class="lbl">essenzielle Last</div>
+<div class="brk"></div>
+<div class="seg il"><b>Intrinsic</b><span>Load 20%</span></div>
+<div class="seg gl"><b>Germane</b><span>Load 60%</span></div>
+
+<div class="seg el"><b>Extraneous</b><span>Load 20%</span></div>
+<div class="cap"></div>
+<div class="cpl">Gesamtkapazität des Arbeitsgedächtnis</div>
+</div>
+++++
+
+=== Verbesserung der Cognitive Load
+
+An dieser Stelle sollte ersichtlich geworden sein, dass Cognitive Load an sich weder gut noch schlecht ist.
+Relevant ist das Verhältnis zwischen den einzelnen Load-Arten, denn ohne Intrinsic und German Load findet auch kein Lernen statt. Es muss also darum gehen das Verhältnis zwischen den einzelnen Bestandteilen richtig zu gestalten.
+
+==== Redurzierung der Extraneous Load
+
+Der erste Schritt in dem obigen Beispiel für die Schaffung von mehr Kapazität für die Germane Load war die Reduzierung der Extraneous Load durch eine verbesserte Darstellung des für die Aufgabenbewältigung bereitgestellten Materials.
+
+Als Beispiel hierfür soll uns die Darstellung der Zusammenhänge zwischen den Elementen der Cognitive Load Theorie dienen, die iterativ verbessert wird.
+
+===== Stufe 1 – Grobes Diagramm mit erklärendem Text
+
+In der ersten Stufe stellt das Diagramm selber wenig Informationen bereit und der Lernende muss zum Verständnis des Diagramms den Text lesen. Seine Aufmerksamkeit teilt sich dabei auf das Diagramm und den Text auf, da er beides in Übereinstimmung bringen muss, um zu verstehen.
+
+[mermaid, format=svg, background=00000000]
+....
+flowchart TD
+    EI["Element Interactivity"]
+    EI --> IL["Intrinsic Load"]
+    EI -->EL["Extraneous Load"]
+
+    IL --> WM["Arbeitsgedächtnis"]
+    EL --> WM
+
+    WM --> GL{{"Germane Load"}}
+    GL --> SCH["Schemabildung / Lernen"]
+
+    EL -.-> GL
+....
+
+Die Element Interactivity ist der gemeinsame Mechanismus der Cognitive Load Theory und gilt für die ICL und ECL.
+Dabei ist die ICL die notwendige Element Interactivity und die ECL die nicht notwendige EI. Da die für beide notwendigen Elementinteraktionen sich die begrenzte Kapaztät der Arbeitsgedächtnisses teilen müssen, sollte die ECL reduziert werden, ob freie Kapazität zu schaffen, die dann wiederum für die Germane Load genutzt werden kann, um Schema zu bilden.
+
+===== Stufe 2 – Ergänzung der Elemente
+
+In der zweiten Stufe reichern wir die wesentlichen Begriffe mit ergänzende Informationen an.
+
+[mermaid, format=svg, background=00000000]
+....
+flowchart TD
+    EI["Element Interactivity<br/>(gemeinsamer Mechanismus)"]
+    EI --> IL["Intrinsic Load<br/>(notwendige Interaktivität)"]
+    EI --> EL["Extraneous Load<br/>(nicht-notwendige Interaktivität)"]
+
+    IL --> WM["Arbeitsgedächtnis<br/>(begrenzte Kapazität)"]
+    EL --> WM
+
+    WM --> GL{{"Germane Load:<br/>Anteil der Kapazität, der aktiv auf die Verarbeitung der Intrinsic Load gerichtet wird"}}
+    GL --> SCH["Schemabildung / Lernen"]
+
+    EL -.-> GL
+....
 
 
+===== Stufe 3 – Informationen zu den Beziehungen
 
+In der dritten Stufe stellen wir auch mehr Informationen zu den Beziehungen bereit.
+
+[mermaid, format=svg, background=00000000]
+....
+flowchart TD
+    EI["Element Interactivity<br/>(gemeinsamer Mechanismus)"]
+    EI -->|notwendig für die Aufgabe,<br/>relativ zum Vorwissen| IL["Intrinsic Load<br/>(notwendige Interaktivität)"]
+    EI -->|durch Darstellung erzeugt,<br/>vermeidbar| EL["Extraneous Load<br/>(nicht-notwendige Interaktivität)"]
+
+    IL --> WM["Arbeitsgedächtnis<br/>(begrenzte Kapazität)"]
+    EL --> WM
+
+    WM --> GL{{"Germane Load:<br/>Anteil der Kapazität, der aktiv auf die<br/>Verarbeitung der Intrinsic Load gerichtet wird"}}
+    GL --> SCH["Schemabildung / Lernen"]
+
+    EL -.->|"senken → Kapazität wird frei"| GL
+....
+
+===== Stufe 4 – Informationen zu den Beziehungen
+
+In der letzten Stufe verbessern wir die Darstellung durch Änderung der Formen und die Nutzung von Farben.
+
+[mermaid, format=svg, background=00000000]
+....
+flowchart TD
+    EI("Element Interactivity<br/>(gemeinsamer Mechanismus)")
+    EI -->|notwendig für die Aufgabe,<br/>relativ zum Vorwissen| IL("Intrinsic Load<br/>(notwendige Interaktivität)")
+    EI -->|durch Darstellung erzeugt,<br/>vermeidbar| EL("Extraneous Load<br/>(nicht-notwendige Interaktivität)")
+
+    IL --> WM("Arbeitsgedächtnis<br/>(begrenzte Kapazität)")
+    EL --> WM
+
+    WM --> GL{{"Germane Load:<br/>Anteil der Kapazität, der aktiv auf die<br/>Verarbeitung der Intrinsic Load gerichtet wird"}}
+    GL --> SCH("Schemabildung / Lernen")
+
+    EL -.->|"senken → Kapazität wird frei"| GL
+
+    style IL fill:#e8b4b4,stroke:#000
+    style GL fill:#d4d4e8,stroke:#000
+    style SCH fill:#d4e8d4,stroke:#000
+    style EL fill:#e8d4b4,stroke:#000
+....
+
+==== Reduzierung der Intrinsic Load
+
+Ebenso wie EL kann auch die Intrinsic Load reduziert werden.
+Das sollte nicht durch eine unnötige oder gar gefährliche Vereinfachung erfolgen, sondern durch einen Reduzierung der Komplixität durch einen stufenweisen Aufbau von Wissen.
