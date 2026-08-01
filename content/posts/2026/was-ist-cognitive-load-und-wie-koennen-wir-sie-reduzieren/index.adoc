@@ -547,7 +547,7 @@ flowchart TD
     WM --> GL{{"Germane Load:<br/>Anteil der Kapazität, der aktiv auf die<br/>Verarbeitung der Intrinsic Load gerichtet wird"}}
     GL --> SCH("Schemabildung / Lernen")
 
-    EL -.->|"senken → Kapazität wird frei"| GL
+    EL -.->|"senken, Kapazität wird frei"| GL
 
     style IL fill:#e8b4b4,stroke:#000
     style GL fill:#d4d4e8,stroke:#000
@@ -558,4 +558,19 @@ flowchart TD
 ==== Reduzierung der Intrinsic Load
 
 Ebenso wie EL kann auch die Intrinsic Load reduziert werden.
-Das sollte nicht durch eine unnötige oder gar gefährliche Vereinfachung erfolgen, sondern durch einen Reduzierung der Komplixität durch einen stufenweisen Aufbau von Wissen.
+Intrinsic Load war die Belastung durch das Thema an sich, mit dem wir uns auseinandersetzen.
+Um sie zu reduzieren, muss das Thema vereinfacht werden, ohne aber das angestrebte Wissens- oder Kompetenzziel zu reduzieren.
+
+Diese Reduktion der Intrinsic Load kann über zwei Methoden erreicht werden:
+
+. Segementierung
+. Sequenzierung
+
+Die Kapazität unseres Arbeitsgedächtnisses ist zwar auf eine geringe Anzahl von Elementen beschränkt, doch kann ein Element ganz unterschiedliche Dinge repräsentieren.
+Wie schon in dem anfangs verwendeten Beispiel kann bei einer mit Kubernetes erfahrenen Person ein Element Kubernetes repräsentieren, bei einem Anfänger hingegen ist Kubernetes noch zu abstrakt, um es als Konzept als einzelnes Element zu repräsentieren.
+
+
+
+
+
+
