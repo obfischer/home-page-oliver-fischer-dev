@@ -111,11 +111,6 @@ Vielleicht wirkt diese Geschichte überzeichnet, doch ist sie es nicht. Etwas Ä
 
 Cognitive Load drückt die Beanspruchung unseres Arbeitsgedächtnisses aus, die wir beim Lernen erfahren. Also, ob uns die Aneignung von Wissen leicht oder schwerfällt. Die Beanspruchung hängt dabei nicht alleine von der Aufgabe ab. Sie hängt auch von den Umständen ab, unter denen wir die Aufgabe lösen müssen.
 
-// REVIEW: Präziser wäre "Beanspruchung des Arbeitsgedächtnisses" statt "des
-// Gehirns". Cognitive Load ist im Kern eine Working-Memory-Theorie — das ist
-// die zentrale Ressource, um die es geht. Für IT-Publikum weiter unten ohnehin
-// eingeführt, aber gleich hier präziser zu sein schadet nicht.
-
 Dabei gibt es einen Punkt, an dem die Belastung so groß wird, dass es zu einer Überlastung (Overload) kommt, ab dem das Ergebnis nicht mehr optimal für die einzelne Person ist. Wir eignen uns zwar noch Wissen an, doch es kann Lücken aufweisen oder nicht zusammenhängend sein. Das wiederum führt zu mehr Aufwand beim Lernen, die Kosten steigen, auch weil Fehler häufiger auftreten.
 
 Die Cognitive Load-Theorie hilft, dieses Phänomen zu verstehen und zu lindern.
@@ -160,14 +155,12 @@ Wichtig für das Verständnis und die Konsequenzen der Cognitive Load Theorie is
 Wie ein Thema im Arbeitsgedächtnis representiert werden kann hängt also vom Vorwissen und dem Lernfortschritt ab.
 Das Arbeitsgedächtnis ist von Kurzzeitgedächtnis nicht strikt abgetrennt, denn es behält Informationen für unsere aktuellen Handlungen vor und plant diese.
 
-// REVIEW: Sachlich unpräzise: "hält so viele Informationen bereit, wie wir
-// brauchen" — das stimmt nicht. Die Kapazität ist HARTE Grenze, nicht
-// bedarfsgesteuert. Miller (1956): 7±2 Chunks; Cowan (2001): eher 4±1.
-// Genau diese ENGE Kapazität ist der Grund, warum CLT überhaupt existiert.
-// Das ist eine der wichtigsten Kernbotschaften und sollte hier klar stehen —
-// gerade für IT-Leser eine einprägsame, quantifizierbare Zahl (bekannt aus
-// "The Magical Number Seven"). Vorschlag zum Ergänzen: "Nur ~4 Elemente
-// gleichzeitig aktiv verarbeitbar."
+// REVIEW: Zwei Probleme im Absatz davor:
+// 1) Satz "In der Forschung wird von ungefähr Elementen ausgegangen" ist
+//    unvollständig — Zahl fehlt. Miller (1956): ~7±2 Chunks; Cowan (2001): ~4±1.
+// 2) "hält so viele Informationen bereit, wie wir brauchen" ist falsch —
+//    die Kapazität ist eine HARTE Grenze, nicht bedarfsgesteuert.
+//    Genau diese Enge ist das Fundament von CLT.
 
 In der Cognitive Load Theorie hat sich Sweller damit beschäftigt, was zu einem effektiven Lernen führt und wie dazu Lernmaterialien gestaltet werden müssen.
 Seine Arbeit beschäftigt sich dabei mit dem Erwerb von neuem Wissen. Dieses kann effektiv aufgenommen werden, wenn die Auslastung des Arbeitsgedächtnisses nicht so hoch wird, dass es zu einer Überlastung kommt. Diese kann vorkommen, wenn die Aufmerksamkeit beim Wissenserwerb sich über mehrere Quellen erstreckt und Wissen aus mehreren Quellen im Arbeitsgedächtnis integriert werden muss. Ist dem so, bezeichnet er dies als Split-Source-Effekt. Die Aufmerksamkeit muss sich teilen und später wieder integrieren. Dieses Phänomen wird als Split-Attention-Effect bezeichnet.
@@ -186,12 +179,6 @@ Sweller unterscheidet ursprünglich in drei Teilarten von Cognitive Load: Intrin
 
 *Extraneous Cognitive Load* (sachfremde kognitive Belastung) ist die Belastung, die nichts mit dem Thema selber zu tun hat, sondern sich aus den Lernumständen wie dem Lernmaterial selber und dessen Aufbereitung ergibt.
 
-// REVIEW: Begriffliche Ungenauigkeit: "extraneous" ≠ "extrinsisch".
-// "Extraneous" = sachfremd/überflüssig/unnötig. "Extrinsisch" ist die
-// Übersetzung von "extrinsic" (von außen kommend) und hat in der
-// Motivationspsychologie eine andere Bedeutung. Besser: "sachfremde
-// kognitive Belastung" oder einfach den englischen Begriff behalten.
-
 *Germane cognitive load* (lernbezogene kognitive Belastung) ist der Denkaufwand, der beim Wissenserwerb aktiv durch den Lernenden zur Konstruktion von Denkmustern aufgewandt wird, die dann als Elemente in Form eines Schemas im Langzeitgedächtnis abgelegt werden.
 
 // REVIEW: "Denkmuster" ist umgangssprachlich ok, der etablierte Fachbegriff
@@ -206,17 +193,9 @@ Dieses Modell ist sehr gut geeignet, um sich die Aufteilung vereinfacht vorstell
 Später wurde diese Dreiteilung zu Gunsten einer Aufteilung auf Intrinsic Cognitive Load und Extraneous Cognitive Load überarbeitet.
 Die Germane Cognitive Load wurde in die Intrinsic Cognitive Load integriert, vor allem, weil man sie nicht als eigene Größe zuverlässig messen konnte, und wird jetzt als der Anteil des Arbeitsgedächtnisses verstanden, der zur Schemabildung für den Wissenserwerb aufgewendet wird.
 
-// REVIEW: Ein paar Präzisierungen:
-// 1) Hier wieder "Extrinsic" — Sweller selbst verwendet konsequent
-//    "Extraneous". Bitte einheitlich verwenden.
-// 2) "aufgegeben" ist zu stark — die Dreiteilung wird in der Praxis
-//    weiterhin breit gelehrt und verwendet. Sweller (2010) hat sie
-//    theoretisch neu eingeordnet, nicht "verworfen". Germane Load wird
-//    heute eher als der Anteil von WM-Ressourcen verstanden, der der
-//    Verarbeitung intrinsischer Elemente (Schema-Bildung) gewidmet
-//    wird — also nicht "in ICL integriert", sondern als Ressource für
-//    ICL-Verarbeitung.
-// 3) Der Messbarkeitsgrund ist richtig — sauber erklärt.
+// REVIEW: Germane Load ist nicht "in ICL integriert", sondern der Anteil
+// der WM-Ressourcen, der der Verarbeitung intrinsischer Elemente (Schema-
+// Bildung) gewidmet wird — eine Ressource für ICL-Verarbeitung, kein Teil davon.
 
 Ausschlaggebend für diese Neudefinition ist, dass alle Arten der Belastung beim Lernen im Arbeitsgedächtnis erfolgen, in dem, wie oben erwähnt, immer nur eine begrenzte Anzahl von Elementen gehalten werden kann, die miteinander interagieren können.
 Um die drei Belastungsarten mit der gleichen Größe beschreiben zu können, wird Element Interactivity genutzt.
@@ -233,76 +212,22 @@ Diese beschreibt, wie viele Elemente miteinander gleichzeitig für die Bearbeitu
 
 ICL wird in dieser aktuelleren Aufteilung als die Zahl der Elemente, die gleichzeitig im Arbeitsgedächtnis gehalten werden müssen und miteinander verknüpft sind, definiert und unabhängig von der ECL, also der Darstellung und Aufbereitung ist. Die Liste der HTTP-Status-Codes zu lernen würde eine geringere ICL hervorrufen als eine Race-Kondition in einem verteilten System. Beim ersteren  Beispiel kann jedes Element einzeln betrachtet werden, beim zweiteren müssen alle Elemente miteinander verknüpft werden, um die Aufgabe zu bewältigen. Die in die ICL integrierte Germane Cognitive Load ist der Teil des Arbeitsgedächtnisses, der für die Konstruktion von Denkmustern aufgewandt werden kann.
 
-// REVIEW: "Zahl der Elemente" ist verkürzt — entscheidend ist ihre
-// INTERAKTION untereinander (element interactivity). 10 unabhängige
-// Fakten sind niedrige ICL, 4 stark interagierende Konzepte hohe.
-// Beispiel für IT: eine Liste HTTP-Statuscodes lernen (niedrige ICL,
-// isoliert) vs. Race Condition zwischen 3 Threads verstehen (hohe ICL,
-// alles muss gleichzeitig gedacht werden).
-
 // ─────────────────────────────────────────────────────────────────
 // GESAMTBEWERTUNG (Kognitionswissenschaftler)
 // ─────────────────────────────────────────────────────────────────
-// STÄRKEN
-// + Sehr guter narrativer Einstieg mit alltagsnahem Beispiel.
-// + Motor-Analogie für "Load ≠ Overload" ist einprägsam und korrekt.
-// + Historische Einordnung mit Quellen ist solide.
-// + Cowan-Referenz zum Gedächtnis ist gut gewählt.
+// + Narrativer Einstieg und Motor-Analogie sind stark.
+// + Iterative Diagramm-Serie (Stufen 1–4) zeigt Extraneous-Load-
+//   Reduktion durch progressive Informationsanreicherung — didaktisch
+//   sehr passend, da Theorie und Beispiel sich gegenseitig erklären.
+// + IT-Beispiele (Kubernetes, HTTP-Statuscodes, Race Condition) gut.
 //
-// SCHWÄCHEN / TODOS
-// - Der Titel verspricht "wie wir sie reduzieren" — der zweite Teil
-//   fehlt komplett. Bitte konkrete Strategien ergänzen: Worked
-//   Examples, Split-Attention vermeiden, Modality-Effect, Chunking,
-//   Scaffolding, Redundanz-Effekt, Expertise-Reversal.
-// - Bezug zur IT-Zielgruppe fehlt weitgehend. Beispiele einbauen:
-//   Code-Reviews, Dokumentation, Onboarding, Pairing, IDE-Setup,
-//   API-Design, Naming, Abstraktionsebenen. Vgl. Buch "Programmer's
-//   Brain" von Felienne Hermans — sehr passend als Referenz.
-// - Wiederkehrende terminologische Unschärfen (extrinsic vs.
-//   extraneous, Denkmuster vs. Schema, Kapazität des KZG).
-// - Rückbezug zum Eingangsbeispiel würde die Übergabesituation
-//   konkret analysierbar machen (welche Load-Arten wirken dort?).
-//
-// TON & STIL
-// Für IT-Publikum angemessen — nicht zu akademisch, nicht zu flach.
-// Länge des Theorie-Teils ist grenzwertig; ohne Praxis-Teil wirkt
-// er wie ein Wikipedia-Auszug. Die Balance kippt in Ordnung, sobald
-// der Anwendungsteil dazukommt.
+// Noch offen:
+// - Abschnitt "Segmentierung / Sequenzierung" bricht ab — Inhalt fehlt.
+// - "Denkmuster" → konsequent "Schema" (CLT-Fachbegriff) verwenden.
+// - Callback zum Eingangsbeispiel: welche Load-Arten wirkten dort?
+//   Macht Theorie für Leser unmittelbar greifbar.
+// - "The Programmer's Brain" (Hermans) als Referenz erwägen.
 
-////
-─────────────────────────────────────────────────────────────────
-ZUSAMMENFASSUNG DER REVIEW (Kognitionswissenschaftler)
-─────────────────────────────────────────────────────────────────
-
-Insgesamt 10 Review-Kommentare als AsciiDoc-Kommentare eingefügt —
-der bestehende Text ist unverändert.
-
-WESENTLICHE FACHLICHE PUNKTE
-- Kapazität des Kurzzeitgedächtnisses: Die Aussage "hält so viele
-  Informationen bereit, wie wir brauchen" ist falsch — harte Grenze
-  (Miller 7±2, Cowan 4±1). Diese Zahl ist zentral für CLT.
-- Extraneous ≠ extrinsisch: Übersetzungsfehler, sollte "sachfremd"
-  oder englisch belassen werden.
-- Schema statt Denkmuster: etablierter Fachbegriff der CLT-Literatur.
-- Split-Source vs. Split-Attention: Letzterer ist in der Literatur
-  geläufiger.
-- Gedächtnis-Dreiteilung: stark umstritten, Cowan (wird zitiert!)
-  vertritt gerade das Gegenteil.
-- "Dreiteilung aufgegeben": zu stark formuliert — sie wird weiter
-  genutzt, wurde nur theoretisch neu eingeordnet.
-- Element Interactivity: ist Kernkonzept von Anfang an, nicht später
-  hinzugefügt; entscheidend ist Interaktion, nicht Anzahl.
-
-STRUKTURELLER HAUPTPUNKT
-Der Titel verspricht "wie wir sie reduzieren" — dieser Teil fehlt
-komplett. Praxisbezug zur IT-Zielgruppe (Code-Reviews, Onboarding,
-Dokumentation) fehlt bisher; Referenz auf "The Programmer's Brain"
-von Felienne Hermans wäre passend.
-
-KLEINES DETAIL
-Öffnendes Anführungszeichen in der Fußnote zum Sweller-1988-Paper
-fehlt.
-////
 
 == Verteilungsbeispiel für Cognitive Load
 
@@ -566,8 +491,16 @@ Diese Reduktion der Intrinsic Load kann über zwei Methoden erreicht werden:
 . Segementierung
 . Sequenzierung
 
-Die Kapazität unseres Arbeitsgedächtnisses ist zwar auf eine geringe Anzahl von Elementen beschränkt, doch kann ein Element ganz unterschiedliche Dinge repräsentieren.
-Wie schon in dem anfangs verwendeten Beispiel kann bei einer mit Kubernetes erfahrenen Person ein Element Kubernetes repräsentieren, bei einem Anfänger hingegen ist Kubernetes noch zu abstrakt, um es als Konzept als einzelnes Element zu repräsentieren.
+Die Kapazität unseres Arbeitsgedächtnisses ist zwar auf eine geringe Anzahl von Elementen beschränkt, doch kann ein Element  unterschiedliche Dinge repräsentieren.
+Wie in dem anfangs verwendeten Beispiel kann bei einer mit Kubernetes erfahrenen Person ein Element Kubernetes repräsentieren, bei einem Anfänger hingegen ist Kubernetes noch zu abstrakt, um es als Konzept als einzelnes Element zu repräsentieren.
+
+
+
+// REVIEW: Abschnitt bricht hier ab — Erklärung der beiden Methoden fehlt.
+// Segmentierung: Thema in eigenständig lernbare Einheiten aufteilen, die
+// das WM nicht überlasten (z.B. Onboarding-Module statt Komplett-Einweisung).
+// Sequenzierung: Lernreihenfolge von niedriger zu hoher Element-Interaktivität
+// — erst isolierte Fakten, dann Zusammenhänge. IT-Beispiele fehlen noch.
 
 
 
