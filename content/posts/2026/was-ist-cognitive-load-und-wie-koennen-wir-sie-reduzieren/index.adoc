@@ -482,7 +482,13 @@ flowchart TD
 
 ==== Reduzierung der Intrinsic Load
 
-Ebenso wie EL kann auch die Intrinsic Load reduziert werden.
+Ebenso wie EL kann auch die Intrinsic Load reduziert durch eine Aufbereitung des Inhalts der Aufgabe, die der begrenzten Kapazität unseres Arbeitsgedächtnisses Rechnung trägt.
+Dabei ist wichtig die begrenzte Kapazität unseres Arbeitsgedächtnisses sich auf Elemente bezieht.
+Dabei kann ein Element unterschiedliche Dinge präsentieren.
+Für eine Person, mit langer Erfahrung kann eine Element Kubernetes mit all seinen Facetten repräsentieren, während für eine Person ohne die gleiche Erfahrung das gleiche Thema nicht vollständig erfassbar ist und aufgeteilt werden muss, bis sich ein Verständnis auf einer höheren Ebene gebildet hat.
+
+
+
 Intrinsic Load war die Belastung durch das Thema an sich, mit dem wir uns auseinandersetzen.
 Um sie zu reduzieren, muss das Thema vereinfacht werden, ohne aber das angestrebte Wissens- oder Kompetenzziel zu reduzieren.
 
