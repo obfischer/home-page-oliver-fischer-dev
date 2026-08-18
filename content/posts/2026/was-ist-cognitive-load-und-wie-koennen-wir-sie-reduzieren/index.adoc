@@ -487,18 +487,14 @@ Dabei ist wichtig die begrenzte Kapazität unseres Arbeitsgedächtnisses sich au
 Dabei kann ein Element unterschiedliche Dinge präsentieren.
 Für eine Person, mit langer Erfahrung kann eine Element Kubernetes mit all seinen Facetten repräsentieren, während für eine Person ohne die gleiche Erfahrung das gleiche Thema nicht vollständig erfassbar ist und aufgeteilt werden muss, bis sich ein Verständnis auf einer höheren Ebene gebildet hat.
 
+Geht es um die Reduzierung von IL muss daher am Anfang immer die Frage stehen, wer eine Aufgabe zu bearbeiten hat und welche Voraussetzungen diese Person mitbringt.
+Anschließend kann die Aufgabe dann weiter unterteilt werden mittels Segmentierung und Sequenzierung.
 
+Bei der **Sequenzierung** wird ein Thema in einzelne Abschnitte aufgeteilt, die nacheinander, auf einander aufbauend, bearbeitet werden können.
+Nach jedem Schritt verfügt die Person über mehr Wissen und Verständnis, das durch weniger, im Idealfall ein einzelnen Element, im Arbeitsgedächnits representiert werden kann.
 
-Intrinsic Load war die Belastung durch das Thema an sich, mit dem wir uns auseinandersetzen.
-Um sie zu reduzieren, muss das Thema vereinfacht werden, ohne aber das angestrebte Wissens- oder Kompetenzziel zu reduzieren.
+**Segmentierung** begleitet die Sequenzierung dadurch, dass zusammenhängende Informationen, die notwendig sind für ein Gesmatverstädnnis und eine höhrere Abstraktion, zusammen vermittelt werden.
 
-Diese Reduktion der Intrinsic Load kann über zwei Methoden erreicht werden:
-
-. Segementierung
-. Sequenzierung
-
-Die Kapazität unseres Arbeitsgedächtnisses ist zwar auf eine geringe Anzahl von Elementen beschränkt, doch kann ein Element  unterschiedliche Dinge repräsentieren.
-Wie in dem anfangs verwendeten Beispiel kann bei einer mit Kubernetes erfahrenen Person ein Element Kubernetes repräsentieren, bei einem Anfänger hingegen ist Kubernetes noch zu abstrakt, um es als Konzept als einzelnes Element zu repräsentieren.
 
 
 
