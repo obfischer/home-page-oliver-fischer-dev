@@ -490,12 +490,20 @@ Für eine Person, mit langer Erfahrung kann eine Element Kubernetes mit all sein
 Geht es um die Reduzierung von IL muss daher am Anfang immer die Frage stehen, wer eine Aufgabe zu bearbeiten hat und welche Voraussetzungen diese Person mitbringt.
 Anschließend kann die Aufgabe dann weiter unterteilt werden mittels Segmentierung und Sequenzierung.
 
-Bei der **Sequenzierung** wird ein Thema in einzelne Abschnitte aufgeteilt, die nacheinander, auf einander aufbauend, bearbeitet werden können.
-Nach jedem Schritt verfügt die Person über mehr Wissen und Verständnis, das durch weniger, im Idealfall ein einzelnen Element, im Arbeitsgedächnits representiert werden kann.
+Bei der **Sequenzierung** wird ein Thema in einzelne Abschnitte aufgeteilt, die nacheinander, aufeinander aufbauend, bearbeitet werden können.
+Nach jedem Schritt verfügt die Person über mehr Wissen und Verständnis, das durch weniger, im Idealfall einem einzelnen Element, im Arbeitsgedächtnis repräsentiert werden kann.
 
-**Segmentierung** begleitet die Sequenzierung dadurch, dass zusammenhängende Informationen, die notwendig sind für ein Gesmatverstädnnis und eine höhrere Abstraktion, zusammen vermittelt werden.
+**Segmentierung** begleitet die Sequenzierung dadurch, dass zusammenhängende Informationen, die notwendig sind für ein Gesamtverständnis und einer höheren Abstraktion, zusammen vermittelt werden.
+
+Als gutes Beispiel für eine gute Kombination aus Segmentierung und Sequenzierung stellt ein gutes Fachbuch dar.
+Auf der obersten Ebene ist es nach Themengebieten aufgebaut, bei denen jedes Thema ein eigenes Segment bildet. Dabei sind die Segmente in Form von Kapiteln zu geschnitten, dass sie nicht zu groß sind und für sich gelesen werden können.
+Dabei bauen die Segmente aufeinander auf, vom Leichten zu schwereren Themen. Dabei werden zuerst die Grundlagen als Fakten vermittelt und später die Zusammenhänge vermittelt.
 
 
+== Cognitive Load in der Produktentwicklung
+
+
+== Cognitive Load in der Software-Entwicklung
 
 
 // REVIEW: Abschnitt bricht hier ab — Erklärung der beiden Methoden fehlt.
