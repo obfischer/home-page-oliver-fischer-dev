@@ -83,7 +83,7 @@ keywords: []
 # Erstes Bild wird als Vorschaubild verwendet
 # Optimale Größe: 1200x630 Pixel
 # Beispiel: ["images/git-workflow-header.png"]
-images: []
+images: ["cover-social.png"]
 
 # Schema.org Typ für strukturierte Daten (JSON-LD)
 # Hilft Suchmaschinen den Content-Typ zu verstehen
