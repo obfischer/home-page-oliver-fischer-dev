@@ -50,7 +50,7 @@ tags: []
 # Kategorien für grobe Einordnung
 # Übergeordnete Themenbereiche, meist hierarchisch
 # Beispiel: ["Entwicklung", "Tools"]
-categories: ["Best Practices"]
+categories: ["Best Practices", "Don’t make me think!", "Developer Experience"]
 
 # Serie für mehrteilige Beiträge
 # Verbindet thematisch zusammenhängende Artikel
