@@ -13,6 +13,8 @@ Ein Artikel wird durch die seine Kategorien Themengebieten zugeordnet.
 
 * Agentic Coding
 * Best Practices
+* Developer Experience
+* Don't make me think!
 * Fundstücke
 * Gedanken
 * Git
