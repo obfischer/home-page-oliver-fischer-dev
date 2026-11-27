@@ -13,20 +13,56 @@ This repository contains an interactice script `hugo-new.sh`, which helps to cre
 
 === Required Software
 
+=== Software to be installed via Homebrew
+
 - Hugo
-- Ruby 2.6.10
 - rbenv
 - Node.js
 
 Each software packet can be installed via Homebrew.
 
-=== Required Installation Steps
+[source,bash]
+.Installation of the required software via Homebrew
+----
+brew install -y hugo
+brew install -y node
+brew install -y rbenv
+----
 
-.Setup of a newly created checkout of the page
-[code,bash]
+=== Installation of the required Ruby version via rbenv
+
+[source,bash]
+.Installation of the required Ruby version
+----
+rbenv install --skip-existing 2.6.10
+----
+
+[source,bash]
+.Set the local application-specific Ruby version via `rbenv`
+----
+rbenv local 2.6.10
+----
+
+=== Install the required Ruby Gems via `bundler`
+
+[source,bash]
+.Install the required Ruby Gems via `bundler`
+----
+bundler install
+----
+
+=== Install the required npm packages via `npm`
+
+[source,bash]
+.filename.sh
+----
+npm install
+----
+
+=== Installation of the used theme for Hugo als Git submodule
+
+[source,bash]
+.Installation of the used theme for Hugo als Git submodule
 ----
 git submodule update --init
-rbenv local 2.6.10
-bundler install
-npm install
 ----
