@@ -1,0 +1,166 @@
+---
+# Quelle: https://gohugo.io/content-management/front-matter/
+
+# Titel des Beitrags
+# Erscheint als <title> im HTML und als H1 auf der Seite
+# Beispiel: "Git Workflow optimieren mit Custom Aliases"
+title: "Eine Nacht in Kasachstan oder: Zoll- und Handelsschranken retten Deutschland nicht"
+
+# Veröffentlichungsdatum im ISO 8601 Format
+# Wird für Sortierung und Sitemap verwendet
+# Beispiel: 2025-01-22T10:30:00+01:00
+date: 2026-11-28T00:59:38+01:00
+
+# Datum der letzten Aktualisierung
+# Signalisiert Suchmaschinen, dass Content gepflegt wird
+# Bei größeren Updates anpassen, nicht bei Tippfehler-Korrekturen
+# Beispiel: 2025-03-15T14:00:00+01:00
+lastmod: 2026-11-28T00:59:31+01:00
+
+# Entwurfsstatus
+# Bei true wird der Beitrag nicht veröffentlicht (außer mit hugo --buildDrafts)
+draft: false
+
+# Meta-Description für Suchmaschinen
+# Erscheint in den Google-Suchergebnissen unter dem Titel
+# Optimal: 150-160 Zeichen, enthält wichtigstes Keyword
+# Beispiel: "Lerne, wie du mit Git Aliases deinen Workflow beschleunigst. Praktische Beispiele für Log-Formatierung und Branch-Management."
+#
+# Bei einer mehrzeiligen Beschreibung kann mit >- gearbeitet werden
+description: >-
+  Ein Rückblick auf einen Abend in Kasachstan und Gedanken zu
+  der sich wirtschaftlich ändernden Weltordnung aus Sicht
+  eines Deutschen.
+
+# Kurzfassung für Listen und Übersichten auf der Website
+# Wird oft auf der Startseite oder in Kategorie-Übersichten angezeigt
+# Kann länger sein als description
+# Beispiel: "Git bietet mächtige Möglichkeiten zur Anpassung. In diesem Artikel zeige ich meine liebsten Aliases und wie du sie einrichtest."
+summary: >-
+  Eine Nacht in Kasachstan hat mir am Beispiel eines Geely Coolray bewusst gemacht,
+  dass uns Handelsbeschränkungen keinen Weg in die Zukunft weisen können, sondern
+  nur ein konsequentes infrage Stellen unseres Status Quo, gepaart mit
+  Mut zur Innovation.
+
+# Autor(en) des Beitrags
+# Kann für Autor-Seiten und strukturierte Daten genutzt werden
+# Beispiel: ["Oliver", "Gastautor"]
+authors: ["Oliver B. Fischer"]
+
+# Tags für Verschlagwortung
+# Feingranulare Themen, werden oft in Tag-Clouds angezeigt
+# Beispiel: ["git", "bash", "produktivität", "cli"]
+tags: ["China", "Deutschland", "Innovation", "Kasachstan"]
+
+# Kategorien für grobe Einordnung
+# Übergeordnete Themenbereiche, meist hierarchisch
+# Beispiel: ["Entwicklung", "Tools"]
+categories: ["Gedanken"]
+
+# Serie für mehrteilige Beiträge
+# Verbindet thematisch zusammenhängende Artikel
+# Stärkt internes Linking und Content-Cluster
+# Beispiel: ["Git Masterclass"]
+series: []
+
+# URL-Slug (letzter Teil der URL)
+# Sollte kurz, lesbar und keyword-reich sein
+# Bindestriche statt Unterstriche verwenden
+# Beispiel: "git-aliases-workflow"
+slug: "eine-nacht-in-kasachstan-oder-zoll-und-handelsschranken-retten-deutschland-nicht"
+
+# Vollständige URL (überschreibt Standardpfad)
+# Nur setzen wenn nötig, leer lassen für Standardverhalten
+# Beispiel: "/tutorials/git/aliases/"
+url: ""
+
+# Weiterleitungen von alten URLs
+# Wichtig wenn URLs geändert werden, verhindert 404 und erhält SEO-Wert
+# Beispiel: ["/blog/alte-url/", "/2024/git-tips/"]
+aliases: []
+
+# Keywords für Meta-Tag
+# SEO-Wert heute gering, kann aber für interne Suche nützlich sein
+# Beispiel: ["git alias", "git konfiguration", "git workflow"]
+keywords: []
+
+# Bilder für Social Media Previews (Open Graph, Twitter Cards)
+# Erstes Bild wird als Vorschaubild verwendet
+# Optimale Größe: 1200x630 Pixel
+# Beispiel: ["images/git-workflow-header.png"]
+images: ["foto-kasachstan-abend.png"]
+
+# Schema.org Typ für strukturierte Daten (JSON-LD)
+# Hilft Suchmaschinen den Content-Typ zu verstehen
+# Mögliche Werte: "BlogPosting", "Article", "HowTo", "TechArticle"
+# Beispiel: "TechArticle"
+schema:
+  type: "BlogPosting"
+---
+// Achtung! Die gerenderte Überschrift wird aus dem
+// Front-Matter genommen.
+// Grund dafür sind spezifische Anpassungen für das Theme
+// Coder (Stand: 2026-01-22)
+= Eine Nacht in Kasachstan oder: Zoll- und Handelsschranken retten Deutschland nicht
+
+image:foto-kasachstan-abend.png[]
+
+Nachts in Kasachstan.
+Ich blicke aus dem Fenster und sage zu meinem Freund, dass da unten ein Auto steht.
+„Sieht gut aus, erinnert mich an einen Range Rover“, sage ich.
+„Ist aber keiner.
+Ist ein Geely Coolray.
+Ich hab ein Foto gemacht und Chatty gefragt“, antwortet er.
+
+Die Unterhaltung geht weiter:
+„18.000 Euro umgerechnet.
+Ein VW ID.4 kostet rund 40.000 Euro in der Basisausstattung.
+Ein Golf ungefähr 30.000 Euro“, fährt er fort.
+Ich erwidere, dass so ein Wagen bei uns mindestens 40.000 Euro kosten würde.
+„Ist doch klar, was die Leute den hier kaufen.
+Mit dem Golf 8 haben sie es versaut.
+Hatte selber einen“, antwortet mein Freund.
+
+Hier bin ich mit vielen Autos gefahren, da der ÖPNV nicht so gut ausgebaut ist wie in Berlin.
+Wohngebiete lassen sich schneller bauen als Infrastruktur, und Wohnungen lassen sich verkaufen.
+Über die Anbindung der Randbezirke in Berlin sprechen wir lieber nicht.
+Das ist ein anderes Thema.
+Hier in Kasachstan übernehmen Taxis, vermittelt über Yandex, die Rolle des ÖPNV.
+BYD, Geely, Haval und mir unbekannte Autos mit chinesischen Namen, in denen sogar das Navigationsgerät auf Chinesisch seine Routenvorschläge macht, von der einfachen Mittelklasse bis hin zur Oberklasse – alle habe ich gesehen.
+Elektro, Hybrid und Benzin.
+
+Und sie sind gut.
+Ich könnte mich jetzt auf Details einschießen, doch das ginge an der eigentlichen Sache vorbei:
+Andere können auch Autos bauen, Plattformen entwickeln und Servicenetze aufbauen.
+Soweit ich es beurteilen kann, ist die Qualität gut.
+Natürlich hat hier BMW einen Namen, ein Audi steht für etwas.
+Doch der Name allein verkauft nichts, vor allem, wenn das Produkt wesentlich teurer ist.
+
+Wir müssen uns klar werden, dass wir von der Vergangenheit nicht leben können und sich andere Länder und Regionen entwickeln.
+Die Menschen dort sind genauso klug oder dumm wie wir.
+Was sich wirklich ändert, ist, dass viele der Länder, die jahrhundertelang unter dem Einfluss Europas, entweder durch Kolonialisierung oder Handel standen, aufholen und sich tradierte Verbindungen auflösen.
+Dieser Umstand an sich ist zu begrüßen, da diese Länder und Regionen die gleichen Anrechte auf Wohlstand, Entwicklung und Gestaltung haben wie wir.
+Wir sind eine Welt.
+
+Für uns bedeutet das, dass wir uns nicht auf die Vergangenheit berufen können.
+Wir haben kein größreres Anrecht auf Märkte und Rohstoffe als andere Länder und Nationen.
+Handelsschranken und Zölle für Waren aus China werden uns nicht retten.
+Wir hatten kein Problem damit, unsere Güter ins Ausland zu exportieren; in Deutschland haben wir auf dem Titel Exportweltmeister unser Selbstverständnis aufgebaut.
+Deutsche Autos, Flugzeuge von Airbus oder französische Weine.
+Jetzt ziehen andere nach.
+Die Welt ist groß, und auch wenn Deutschland und die Europäische Union große Märkte sind – es geht auch ohne uns.
+Andere Teile der Welt nehmen die Waren und Güter auf und ermöglichen neuen Produzenten, Skaleneffekte zu realisieren und unsere Marktanteile einzuschränken.
+
+Sich vor Herausforderungen zu verstecken, mag für eine gewisse Zeit funktionieren, aber über kurz oder lang führt das in den Abgrund.
+
+Unsere Lösungen der Vergangenheit waren gut, doch jetzt funktionieren sie nicht mehr.
+Wer nur auf das Alte setzt, baut ein Museum.
+Museen besucht man vielleicht gerne, aber darin leben will niemand.
+Und wer sagt denn, dass die Zukunft nicht nur anders, sondern vielleicht auch besser sein kann?
+
+Was hilft, ist, mit offenen Augen durch die Welt zu gehen, abseits der uns vertrauten westlichen Hemisphäre, unsere Mitbewerber als gleichrangig und gleichwertig zu betrachten, die Herausforderung anzunehmen und sich gleichzeitig infrage zu stellen.
+
+Letztens fahren wir, meine Freundin und ich, durch Berlin, sie sieht ein Auto einer chinesischen Marke und sagt:
+„Die gibt es auch bei euch?
+Wenn ihr nicht aufpasst, dann sind bald die Hälfte aller Autos bei euch auf den Straßen chinesisch.
+Wie bei uns.“
